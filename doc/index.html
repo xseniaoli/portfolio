@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Doctor - official site</title>
+</head>
+	<body>
+		<a href="../index.html" class="portfolio" title="Вернуться к главной странице портфолио">Вернуться к портфолио</a>
+		<nav>
+			<img class="logo" src="img/icons/logo.png" alt="logo">
+			<div class="logo_text">Doctor
+				<div>Meet our most specialist doctors</div>
+			</div>
+			<ul class="nav_menu">
+				<li><a href="#home">home</a></li>
+				<li><a href="#about_us">about us</a></li>
+				<li><a href="#our_services">our services</a></li>
+				<li><a href="#our_team">our team</a></li>
+				<li><a href="#contact_us">contact us</a></li>
+			</ul>
+			<div class="hamburger_menu">
+				<input id="menu_toggle" type="checkbox" />
+				<label class="menu_btn" for="menu_toggle">
+					<span></span>
+				</label>
+				<div class="menu_box">
+					<div class="wrap">
+						<a class="menu_item" href="#about_us">about us</a>
+						<a class="menu_item" href="#our_services">our services</a>
+					</div>
+					<div class="wrap">
+						<a class="menu_item" href="#our_team">our team</a>
+						<a class="menu_item" href="#contact_us">contact us</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div id="home" class="slider">
+			<div class="item">
+				<img src="img/slider/slider1.jpg" alt="Slider image1">
+				<div class="slide_main_text">providing</div>
+				<div class="slide_subtext">highquality service for men & women</div>
+				<button class="learn">learn more</button>
+			</div>
+			<div class="item">
+				<img src="img/slider/slider2.jpg" alt="Slider image2">
+			</div>
+			<div class="item">
+				<img src="img/slider/slider3.jpg" alt="Slider image3">
+			</div>
+
+			<a class="prev" onclick="minusSlide()">&#10094;</a>
+	    	<a class="next" onclick="plusSlide()">&#10095;</a>
+		</div>
+		<section id="about_us"class="about">
+			<div class="blue_title">about us</div>
+			<div class="dark_subtitle">	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</div>
+			<div class="wrapper">
+				<div class="wrapper_item">
+					<img src="img/block_foto/foto1.jpg" alt="Foto1">
+					<div class="hexogen"><span>C</span></div>
+					<div class="wrapper_item_text">
+						<div class="wrapper_item_text_title">children's specialist</div>
+						<div class="wrapper_item_text_subtitle">Lorem Ipsum is simply dummy text of the printing and <br>typesetting industry. Lorem Ipsum has been <br>the industry's standard dummy text ever since the<br> 1500s, when an unknown printer.</div>
+					</div>
+				</div>
+				<div class="wrapper_item">
+					<img src="img/block_foto/foto2.jpg" alt="Foto2">
+					<div class="hexogen"><span>W</span></div>
+					<div class="wrapper_item_text">
+						<div class="wrapper_item_text_title">women's specialist</div>
+						<div class="wrapper_item_text_subtitle">Lorem Ipsum is simply dummy text of the printing and <br>typesetting industry. Lorem Ipsum has been <br>the industry's standard dummy text ever since the<br> 1500s, when an unknown printer.</div>
+					</div>
+				</div>
+				<div class="wrapper_item">
+					<img src="img/block_foto/foto3.jpg" alt="Foto3">
+					<div class="hexogen"><span>M</span></div>
+					<div class="wrapper_item_text">
+						<div class="wrapper_item_text_title">men's specialist</div>
+						<div class="wrapper_item_text_subtitle">Lorem Ipsum is simply dummy text of the printing and <br>typesetting industry. Lorem Ipsum has been <br>the industry's standard dummy text ever since the<br> 1500s, when an unknown printer.</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="our_services" class="services">
+			<div class="white_title">our services</div>
+			<div class="wrapper">
+				<div class="wrapper_icon">
+					<div class="wrapper_icon_hexogen">
+						<img class="heart" src="img/icons/heart.png">
+					</div>
+					<div class="wrapper_icon_text">heart problem</div>
+				</div>
+				<div class="wrapper_icon">
+					<div class="wrapper_icon_hexogen">
+						<img src="img/icons/brain.png">
+					</div>
+					<div class="wrapper_icon_text">brain problem</div></div>
+				<div class="wrapper_icon">
+					<div class="wrapper_icon_hexogen">
+						<img class="bone" src="img/icons/bone.png">
+					</div>
+					<div class="wrapper_icon_text">knee problem</div></div>
+				<div class="wrapper_icon">
+					<div class="wrapper_icon_hexogen">
+						<img src="img/icons/chest.png">
+					</div>
+					<div class="wrapper_icon_text">human bones problem</div>
+				</div>
+			</div>
+		</section>
+		<section id="our_team" class="team">
+			<div class="blue_title">our team</div>
+			<div class="dark_subtitle">	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</div>
+			<div class="wrapper">
+				<div class="wrapper_team_item">
+					<img src="img/block_foto/doc1.jpg">
+					<div class="square_up"></div>
+					<div class="wrapper_team_item_text">
+						<div class="wrapper_team_item_text_title">Dr. Keith M. Weiner, M.D.</div>
+						<div class="wrapper_team_item_text_subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text.</div>
+					</div>
+				</div>
+				<div class="wrapper_team_item">
+					<div class="wrapper_team_item">
+						<div class="wrapper_team_item_text">
+							<div class="wrapper_team_item_text_title">Dr. danielle, M.D.</div>
+							<div class="wrapper_team_item_text_subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text.</div>
+						</div>
+						<img src="img/block_foto/doc2.jpg">
+						<div class="square_down"></div>
+					</div>
+				</div>
+				<div class="wrapper_team_item">
+					<div class="wrapper_team_item">
+						<img src="img/block_foto/doc3.jpg">
+						<div class="square_up"></div>
+						<div class="wrapper_team_item_text">
+							<div class="wrapper_team_item_text_title">Dr. joseph, M.D.</div>
+							<div class="wrapper_team_item_text_subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text.</div>
+						</div>
+					</div>
+				</div>
+				<div class="wrapper_team_item">
+					<div class="wrapper_team_item">
+						<div class="wrapper_team_item_text">
+							<div class="wrapper_team_item_text_title">Dr. caitlin, M.D.</div>
+							<div class="wrapper_team_item_text_subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text.</div>
+						</div>
+						<img src="img/block_foto/doc4.jpg">
+						<div class="square_down"></div>
+					</div>
+				</div>
+				<div class="wrapper_team_item">
+					<div class="wrapper_team_item">
+						<img src="img/block_foto/doc5.jpg">
+						<div class="square_up"></div>
+						<div class="wrapper_team_item_text">
+							<div class="wrapper_team_item_text_title">Dr. michael, M.D.</div>
+							<div class="wrapper_team_item_text_subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contact_us" class="contact">
+			<div class="contact_block">
+				<div class="white_title">contact us</div>
+				<div class="contact_block_wrapper">
+					<div class="contact_block_wrapper_info">
+						<div class="contact_block_wrapper_info_title">contact information</div>
+						<div class="contact_block_wrapper_info_data">
+							<img src="img/icons/calendar.svg">
+							<span>Monday - Friday:</span>  9:30AM to 6:30PM
+						</div>
+						<div class="contact_block_wrapper_info_data">
+							<img src="img/icons/marker.svg">
+							<span>Address:</span>  123 Some Street, London, UK, CP 123
+						</div>
+						<div class="contact_block_wrapper_info_data">
+							<img src="img/icons/mobile.svg">
+							<span>Phone:</span>  (032) 984-1235
+						</div>
+						<div class="contact_block_wrapper_info_data">
+							<img src="img/icons/print.svg">
+							<span>Fax:</span>  (132) 984-1234
+						</div>
+						<div class="contact_block_wrapper_info_data">
+							<img src="img/icons/mail.svg">
+							<span>Email:</span>  info@doctor.com
+						</div>
+					</div>
+					<div class="contact_block_wrapper_msg">
+						<div class="contact_block_wrapper_info_title">leave us a massege</div>
+						<form action="" method="">
+							<input type="text" name="Name" placeholder="Name:">
+							<input type="email" name="Email" placeholder="Email:">
+							<input type="tel" name="Phone" placeholder="Phone No:">
+						    <textarea type="text" name="Massege" placeholder="Massege:"></textarea>
+						    <input type="submit" value="Submit" class="contact_block_wrapper_msg_submit">
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<a href="https://facebook.com">
+				<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="#b1b1b1" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+			</a>
+			<a href="https://twitter.com">
+				<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#b1b1b1" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+			</a>
+			<a href="https://skype.com">
+				<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="skype" class="svg-inline--fa fa-skype fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#b1b1b1" d="M424.7 299.8c2.9-14 4.7-28.9 4.7-43.8 0-113.5-91.9-205.3-205.3-205.3-14.9 0-29.7 1.7-43.8 4.7C161.3 40.7 137.7 32 112 32 50.2 32 0 82.2 0 144c0 25.7 8.7 49.3 23.3 68.2-2.9 14-4.7 28.9-4.7 43.8 0 113.5 91.9 205.3 205.3 205.3 14.9 0 29.7-1.7 43.8-4.7 19 14.6 42.6 23.3 68.2 23.3 61.8 0 112-50.2 112-112 .1-25.6-8.6-49.2-23.2-68.1zm-194.6 91.5c-65.6 0-120.5-29.2-120.5-65 0-16 9-30.6 29.5-30.6 31.2 0 34.1 44.9 88.1 44.9 25.7 0 42.3-11.4 42.3-26.3 0-18.7-16-21.6-42-28-62.5-15.4-117.8-22-117.8-87.2 0-59.2 58.6-81.1 109.1-81.1 55.1 0 110.8 21.9 110.8 55.4 0 16.9-11.4 31.8-30.3 31.8-28.3 0-29.2-33.5-75-33.5-25.7 0-42 7-42 22.5 0 19.8 20.8 21.8 69.1 33 41.4 9.3 90.7 26.8 90.7 77.6 0 59.1-57.1 86.5-112 86.5z"></path></svg>
+			</a>
+		</footer>
+		<script src="js/script.js"></script>
+	</body>
+</html>

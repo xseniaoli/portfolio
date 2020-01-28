@@ -1,0 +1,541 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 10px; }
+
+@font-face {
+  font-family: Cologne;
+  src: url(font/Cologne.ttf); }
+.portfolio {
+  position: fixed;
+  width: 200px;
+  height: 40px;
+  bottom: 75px;
+  right: 75px;
+  padding-top: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  background: #737373;
+  color: #fff;
+  border: 2px solid #737373;
+  border-radius: 3px;
+  text-align: center;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 16px;
+  z-index: 999; }
+  .portfolio:hover {
+    text-decoration: none;
+    background: transparent;
+    color: #737373;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+    -webkit-transition-timing-function: linear;
+            transition-timing-function: linear; }
+
+.blue_title {
+  font-family: "Cologne";
+  font-size: 48px;
+  color: #3ca1ce;
+  text-transform: uppercase; }
+
+.white_title {
+  font-family: "Cologne";
+  font-size: 48px;
+  color: #fff;
+  text-transform: uppercase; }
+
+.dark_subtitle {
+  font-family: "Cologne";
+  font-size: 22px;
+  color: #737373;
+  text-transform: uppercase; }
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+/*меню */
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 0 auto;
+  padding: 30px 200px;
+  height: 120px; }
+
+img.logo {
+  width: 50px;
+  height: 60px; }
+
+.logo_text {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-left: 8px;
+  margin-right: auto;
+  font-family: "Cologne";
+  font-size: 34px;
+  color: #000;
+  text-transform: uppercase; }
+  .logo_text div {
+    margin-top: -15px;
+    font-size: 10px;
+    font-family: "Arial";
+    font-weight: 300;
+    text-transform: none; }
+
+.nav_menu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .nav_menu li {
+    list-style-type: none; }
+    .nav_menu li a {
+      font-family: "Cologne";
+      font-size: 16px;
+      color: #737373;
+      text-transform: uppercase;
+      text-decoration: none; }
+    .nav_menu li a:hover {
+      color: #3ca1ce;
+      cursor: pointer; }
+
+.hamburger_menu {
+  display: none; }
+
+/* слайдер */
+.slider {
+  height: 580px;
+  position: relative;
+  margin: auto;
+  margin-top: 2rem; }
+  .slider .item img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 580px; }
+
+/* кнопки слайдера */
+.slider .prev, .slider .next {
+  position: absolute;
+  top: 0;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  margin-right: 50px;
+  margin-left: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  border-radius: 0 3px 3px 0;
+  overflow-y: hidden;
+  cursor: pointer; }
+
+.slider .next {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+/* текст и кнопка внутри слайдера */
+.slide_main_text, .slide_subtext, button {
+  position: absolute;
+  color: #fff;
+  left: 13%;
+  font-family: "Cologne";
+  text-transform: uppercase; }
+
+.slide_main_text {
+  top: 25%;
+  font-size: 118px; }
+
+.slide_subtext {
+  top: 55%;
+  font-size: 28px; }
+
+button.learn {
+  top: 70%;
+  width: 240px;
+  height: 56px;
+  background: url(../img/bgr/btn_bgr.png) center center/cover no-repeat;
+  font-size: 30px;
+  border: none; }
+
+/* анимация слайда */
+.slider .item {
+  -webkit-animation-name: slider;
+          animation-name: slider;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s; }
+
+@-webkit-keyframes slider {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+
+@keyframes slider {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+/* блок about us */
+.about {
+  width: 100%;
+  min-height: 760px;
+  padding: 50px 200px;
+  margin: 0 auto;
+  text-align: center; }
+  .about .wrapper_item {
+    position: relative;
+    margin-top: 5rem;
+    width: 360px;
+    min-height: 500px;
+    text-align: center; }
+    .about .wrapper_item .hexogen {
+      position: absolute;
+      width: 70px;
+      height: 77px;
+      top: 52%;
+      left: 40%;
+      text-align: center;
+      background: url(../img/icons/hexogen.png) center center/cover no-repeat; }
+      .about .wrapper_item .hexogen span {
+        display: block;
+        font-family: "Cologne";
+        font-size: 60px;
+        color: #383838;
+        margin-top: -6px; }
+    .about .wrapper_item_text {
+      background: url(../img/bgr/block.png) center center/cover no-repeat;
+      min-height: 200px;
+      border-top: 5px solid #fff; }
+      .about .wrapper_item_text_title {
+        margin-top: 50px;
+        font-family: "Cologne";
+        font-size: 26px;
+        color: #fff;
+        text-transform: uppercase; }
+      .about .wrapper_item_text_subtitle {
+        font-family: "Open Sans";
+        font-weight: 300;
+        font-size: 14px;
+        color: #fff; }
+  .about .wrapper_item:hover .hexogen span {
+    color: #3ca1ce;
+    -webkit-transition: all 0.6s ease-in 0.2s;
+    transition: all 0.6s ease-in 0.2s; }
+  .about .wrapper_item:hover .wrapper_item_text {
+    background: url(../img/bgr/block_hover.png);
+    -webkit-transition: all 0.6s ease-in 0.2s;
+    transition: all 0.6s ease-in 0.2s; }
+
+/* блок our services */
+.services {
+  width: 100%;
+  min-height: 640px;
+  padding: 50px 200px;
+  margin: 0 auto;
+  text-align: center;
+  background: url(../img/bgr/blue_bgr.jpg) center center/cover no-repeat; }
+  .services .wrapper {
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto; }
+    .services .wrapper_icon {
+      margin-top: 9rem; }
+      .services .wrapper_icon_hexogen {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-item-align: center;
+            align-self: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin: 0 auto;
+        width: 250px;
+        height: 250px;
+        background: url(../img/icons/hexogen_icon.png) center center/cover no-repeat; }
+        .services .wrapper_icon_hexogen img {
+          position: absolute;
+          padding-left: 8rem; }
+        .services .wrapper_icon_hexogen img.heart {
+          padding-left: 6rem; }
+        .services .wrapper_icon_hexogen img.bone {
+          padding-left: 10rem; }
+      .services .wrapper_icon_text {
+        margin-top: 3rem;
+        font-family: "Cologne";
+        font-size: 30px;
+        color: #fff;
+        text-transform: uppercase; }
+
+/* блок our team */
+.team {
+  min-height: 725px;
+  width: auto;
+  padding: 50px 200px;
+  padding: 50px 200px;
+  margin: 0 auto;
+  text-align: center; }
+  .team .wrapper {
+    margin-top: 5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .team .wrapper_team_item {
+      min-width: 235px;
+      min-height: 470px;
+      position: relative; }
+      .team .wrapper_team_item .square_up, .team .wrapper_team_item .square_down {
+        position: absolute;
+        overflow: hidden;
+        top: 47%;
+        left: 44%;
+        width: 28px;
+        height: 28px;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        background: url(../img/bgr/block_hover.png) center center/cover no-repeat; }
+      .team .wrapper_team_item .square_up {
+        border-top: 2px solid #fff;
+        border-left: 2px solid #fff; }
+      .team .wrapper_team_item .square_down {
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff; }
+      .team .wrapper_team_item_text {
+        padding: 20px 25px 25px 15px;
+        width: 235px;
+        height: 235px;
+        background: url(../img/bgr/block_hover.png) center center/cover no-repeat;
+        border: 2px solid #fff; }
+        .team .wrapper_team_item_text_title {
+          font-family: "Cologne";
+          font-size: 20px;
+          color: #fff;
+          text-transform: uppercase;
+          text-align: left; }
+        .team .wrapper_team_item_text_subtitle {
+          font-family: "Open Sans";
+          font-weight: 400;
+          font-size: 11px;
+          color: #fff;
+          text-align: left; }
+    .team .wrapper_team_item:hover .wrapper_team_item_text, .team .wrapper_team_item:hover .square_up, .team .wrapper_team_item:hover .square_down {
+      cursor: default;
+      background: url(../img/bgr/block.png) center center/cover no-repeat;
+      -webkit-transition: all 0.6s ease-in 0.2s;
+      transition: all 0.6s ease-in 0.2s; }
+
+/* contact us */
+.contact {
+  width: 100%;
+  min-height: 845px;
+  padding: 12rem 20rem;
+  background: url(../img/bgr/map_bgr.jpg) center center/cover no-repeat; }
+  .contact_block {
+    min-height: 600px;
+    background: url(../img/bgr/blue_bgr.jpg) center center/cover no-repeat;
+    margin: 0 auto;
+    text-align: center;
+    padding: 4rem 3rem; }
+    .contact_block_wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .contact_block_wrapper_info {
+        width: 555px;
+        text-align: left; }
+        .contact_block_wrapper_info_title {
+          font-family: "Cologne";
+          font-size: 30px;
+          color: #fff;
+          text-transform: uppercase;
+          border-bottom: 1px solid #FFF; }
+        .contact_block_wrapper_info_data {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          font-family: "Open Sans";
+          font-size: 18px;
+          color: #fff;
+          font-weight: 300;
+          padding-top: 2rem; }
+          .contact_block_wrapper_info_data span {
+            display: block;
+            margin-right: 10px;
+            font-family: "Open Sans";
+            font-size: 18px;
+            color: #fff;
+            font-weight: 600;
+            padding-left: 10px; }
+          .contact_block_wrapper_info_data img {
+            width: 25px;
+            height: 25px; }
+      .contact_block_wrapper_msg {
+        width: 555px;
+        text-align: left; }
+        .contact_block_wrapper_msg form {
+          width: 100%; }
+          .contact_block_wrapper_msg form input, .contact_block_wrapper_msg form textarea {
+            width: inherit;
+            height: 40px;
+            margin-top: 2rem;
+            padding-left: 2rem;
+            background-color: #fff;
+            border: none;
+            font-size: 14px; }
+          .contact_block_wrapper_msg form textarea {
+            height: 120px;
+            padding-top: 10px;
+            resize: none; }
+          .contact_block_wrapper_msg form input[type='submit'] {
+            margin-top: 1rem;
+            background: url(../img/bgr/block.png) center center/cover no-repeat;
+            border: none;
+            font-family: "Cologne";
+            font-size: 26px;
+            color: #fff;
+            text-transform: uppercase; }
+
+footer {
+  min-height: 60px;
+  padding: 2rem 20rem;
+  text-align: right; }
+  footer svg {
+    width: 25px;
+    height: 25px; }
+  footer path:hover {
+    fill: #3ca1ce; }
+
+@media screen and (min-width: 320px) and (max-width: 925px) {
+  .nav_menu, .slider {
+    display: none; }
+
+  nav {
+    padding: 30px; }
+    nav .hamburger_menu {
+      display: block; }
+      nav .hamburger_menu #menu_toggle {
+        opacity: 0; }
+      nav .hamburger_menu .menu_btn {
+        position: fixed;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        top: 50px;
+        right: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 99; }
+      nav .hamburger_menu .menu_btn > span, nav .hamburger_menu .menu_btn > span::before, nav .hamburger_menu .menu_btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: #3ca1ce; }
+      nav .hamburger_menu .menu_btn > span::before {
+        content: "";
+        top: -8px; }
+      nav .hamburger_menu .menu_btn > span::after {
+        content: "";
+        top: 8px; }
+      nav .hamburger_menu .menu_box {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 150px;
+        margin: 0;
+        padding-top: 35px;
+        text-align: center;
+        background: #fff; }
+        nav .hamburger_menu .menu_box .menu_item {
+          display: block;
+          padding: 12px 24px;
+          color: #333;
+          font-family: "Cologne";
+          font-size: 20px;
+          color: #737373;
+          text-transform: uppercase;
+          text-decoration: none; }
+      nav .hamburger_menu #menu_toggle:checked ~ .menu_btn > span {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg); }
+      nav .hamburger_menu #menu_toggle:checked ~ .menu_btn > span::before {
+        top: 0;
+        -webkit-transform: rotate(0);
+                transform: rotate(0); }
+      nav .hamburger_menu #menu_toggle:checked ~ .menu_btn > span::after {
+        top: 0;
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg); }
+      nav .hamburger_menu #menu_toggle:checked ~ .menu_box {
+        visibility: visible;
+        left: 0; }
+
+  .about {
+    padding: 50px 30px; }
+    .about .wrapper_item {
+      width: 250px; }
+    .about .wrapper img {
+      width: 250px; }
+    .about .wrapper .hexogen {
+      top: 35%;
+      left: 35%; }
+
+  .services, .team, .contact, footer {
+    padding: 50px 30px; } }
+
+/*# sourceMappingURL=style.css.map */

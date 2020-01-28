@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif; }
+
+header {
+  width: 100%;
+  min-height: 720px;
+  margin: 0 auto;
+  background: url(../img/bgr.jpg) center center/cover no-repeat;
+  background-attachment: fixed; }
+  header .opacity {
+    width: 100%;
+    min-height: inherit;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.7)));
+    background: linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+    text-align: center;
+    padding-top: 18%; }
+    header .opacity .head_title {
+      width: 100%;
+      font-weight: 700;
+      font-size: 52px;
+      color: #fff; }
+    header .opacity .head_subtitle {
+      padding-top: 2rem;
+      font-weight: 300;
+      font-size: 24px;
+      color: #fff; }
+    header .opacity hr {
+      border-color: #fff;
+      width: 100%;
+      margin-top: 20px; }
+
+main {
+  width: 100%;
+  background: #6b9aae;
+  margin: 0 auto;
+  padding: 5% 0 5%;
+  text-align: center; }
+  main .title {
+    font-size: 42px;
+    font-weight: 400;
+    color: #fff;
+    padding-bottom: 3rem; }
+  main .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    main .skills .skill {
+      width: 33.3%; }
+      main .skills .skill .wrap {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        main .skills .skill .wrap img {
+          width: 100px;
+          height: 100px; }
+        main .skills .skill .wrap .skill_title {
+          font-size: 20px;
+          font-weight: 400;
+          color: #fff; }
+      main .skills .skill .text {
+        font-size: 16px;
+        font-weight: 300;
+        color: #cee6f2;
+        padding-top: 15px;
+        padding-bottom: 5rem; }
+
+.portfolio {
+  width: 100%;
+  height: auto;
+  background: #6b9aae;
+  padding-bottom: 5%;
+  text-align: center; }
+  .portfolio .title {
+    font-size: 42px;
+    font-weight: 400;
+    color: #fff;
+    padding-bottom: 2rem; }
+  .portfolio .subtitle {
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+    padding-bottom: 2rem; }
+  .portfolio .block {
+    width: 100%;
+    min-height: 484px; }
+    .portfolio .block .wrap {
+      position: relative; }
+      .portfolio .block .wrap img {
+        width: 100%;
+        min-height: 484px;
+        opacity: 0.4; }
+      .portfolio .block .wrap .info {
+        position: absolute;
+        top: 35%;
+        padding: 0 20px 0; }
+        .portfolio .block .wrap .info_title {
+          font-size: 24px;
+          font-weight: 700;
+          color: #fff; }
+        .portfolio .block .wrap .info_subtitle {
+          font-size: 16px;
+          font-weight: 400;
+          color: #fff; }
+      .portfolio .block .wrap .unvisible {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        padding: 300px 50px 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.7)));
+        background: linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)); }
+        .portfolio .block .wrap .unvisible a {
+          width: 175px;
+          height: 45px;
+          padding: 10px 20px;
+          border-radius: 5px;
+          border: 2px solid #fff;
+          background: transparent;
+          font-size: 16px;
+          font-weight: 400;
+          color: #fff; }
+        .portfolio .block .wrap .unvisible a:hover {
+          text-decoration: none; }
+    .portfolio .block .wrap:hover .unvisible {
+      opacity: 1;
+      visibility: visible;
+      -webkit-transition-duration: 1.5s;
+              transition-duration: 1.5s;
+      -webkit-transition-timing-function: easy-in-out;
+              transition-timing-function: easy-in-out; }
+
+footer {
+  width: 100%;
+  background: #0b2323;
+  margin: 0 auto;
+  padding: 5% 0 5%;
+  text-align: center; }
+  footer .title {
+    font-size: 42px;
+    font-weight: 400;
+    color: #fff;
+    padding-bottom: 2rem; }
+  footer .subtitle {
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+    padding-bottom: 2rem; }
+  footer .connect {
+    width: 100%;
+    text-align: center; }
+    footer .connect img {
+      width: 100px;
+      height: 100px; }
+    footer .connect_title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #fff;
+      padding: 2rem 0; }
+    footer .connect_subtitle {
+      font-size: 16px;
+      font-weight: 400;
+      color: #fff; }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  header .opacity {
+    padding-bottom: 2rem; }
+
+  main .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    main .skills .skill {
+      width: 100%; }
+
+  .portfolio .block {
+    margin-bottom: 20px; }
+
+  footer .connect {
+    margin-bottom: 15px; } }
+
+/*# sourceMappingURL=style.css.map */
