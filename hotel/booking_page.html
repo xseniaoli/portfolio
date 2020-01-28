@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width">
+		<link href="https://fonts.googleapis.com/css?family=Gilda+Display|Roboto:300,400,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/booking_page/style.css">
+		<title>Booking</title>
+	</head>
+	<body>
+		<a href="../index.html" class="portfolio" title="Вернуться к главной странице портфолио">Вернуться к портфолио</a>
+		<div class="top_header">
+			<div class="container">
+				<div class="row">
+					<div class="top_header_left col-xl-5 col-lg-6">
+						<div class="lang">
+							<span>EN</span>
+							<span>RU</span>
+							<span>DE</span>
+						</div>
+						<div class="pay_options">
+							<img src="images/icons/credit-card.png" alt="credit card icon">
+							<span>Payment Options</span>
+						</div>
+						<div class="terms">
+							<img src="images/icons/check-square.png" alt="check icon">
+							<span>Terms Conditions</span>
+						</div>
+					</div>
+					<div class="top_header_right col-xl-6 offset-xl-1 col-lg-6">
+						<a href="#" class="review">Add Your Review</a>
+						<a href="#" class="mail"><img src="images/icons/envelope.png" alt="mail icon"></a>
+						<a href="#" class="my_booking">My Bookings</a>
+						<button id="log_in_btn" class="log_in">
+							<img src="images/icons/default-avatar.png" alt="default avatar icon"> My Account
+						</button>
+						<div id="log_in_modal" class="log_in_modal">
+							<div class="log_in_modal_content">
+								<div class="log_in_modal_header">
+									<span id="log_in_cls" class="close">&times;</span>
+									<div class="modal_title">Welcome back!</div>
+								</div>
+								<div class="modal_body">
+									<form>
+										<input type="text" name="login" placeholder="Login or email:">
+										<input type="password" name="password" placeholder="Password:">
+										<button>log in</button>
+									</form>
+								</div>
+							</div>
+						</div>
+						<button id="sign_in_btn" class="sign_in">SIGN IN</button>
+						<div id="sign_in_modal" class="sign_in_modal">
+							<div class="sign_in_modal_content">
+								<div class="sign_in_modal_header">
+									<span id="sign_in_cls" class="close">&times;</span>
+									<div class="modal_title">Create Your Account</div>
+								</div>
+								<div class="modal_body">
+									<form>
+										<input type="text" name="name" placeholder="Name:">
+										<input type="text" name="surname" placeholder="Surname:">
+										<input type="text" name="login" placeholder="Login:">
+										<input type="email" name="email" placeholder="Email:">
+										<input type="password" name="password" placeholder="Password:">
+										<button>sing in</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav>
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-2 col-lg-3 col-4 logo">Logo hotel<div class="logo_inner">luxury hotel</div></div>
+					<div class="col-xl-7 offset-xl-3 col-lg-7 offset-lg-2">
+						<ul class="top_menu">
+							<li><a href="index.html">Home</a>
+								<ul class="inner_menu">
+									<li><a href="index.html#about">About Us</a></li>
+									<li><a href="index.html#best">Best Rooms</a></li>
+									<li><a href="index.html#services">Our Services</a></li>
+								</ul>
+							</li>
+							<li><a href="search_page.html">Rooms</a></li>
+							<li><a href="room_page.html">Single Room</a></li>
+							<li><a href="#">Booking</a>
+								<ul class="inner_menu">
+									<li><a href="search_page.html">Search Room</a></li>
+									<li><a href="booking_page.html">Booking</a></li>
+									<li><a href="checkout_page.html">Checkout</a></li>
+									<li><a href="thank_page.html">Thanks You</a></li>
+								</ul>
+							</li>
+							<li><a href="index.html#blog">Our News</a></li>
+							<li><a href="contact_page.html">Contact</a></li>
+						</ul>
+					</div>
+					<div id="mobile_icon" class="menu_icon_wrapper col-1 offset-11">
+						<div class="menu_icon"></div>
+					</div>
+					<div id="mobile_nav" class="mobile_nav">
+                        <div class="mobile_nav_list">
+							<a href="index.html" class="mobile_nav_link">Home</a>
+							<a href="search_page.html" class="mobile_nav_link">Rooms</a>
+							<a href="booking_page.html" class="mobile_nav_link">Booking</a>
+							<a href="index.html#blog" class="mobile_nav_link">Our News</a>
+							<a href="contact_page.html" class="mobile_nav_link">Contact</a>
+							<a href="#" class="mobile_nav_link">Payment Options</a>
+							<a href="#" class="mobile_nav_link">Terms Conditions</a>
+							<a href="#" class="mobile_nav_link">My Account</a>
+							<a href="#" class="mobile_nav_link">SIGN IN</a>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</nav>
+		<header>
+			<span>Booking</span>
+			<div class="gradient">
+				<div class="container">
+					<div class="row">
+						<ul class="navigation col-lg-8 offset-lg-2 col-12">
+							<li><a href="search_page.html"><div class="circle">1</div>search</a></li>
+							<li><a href="#"><div class="checked">2</div>booking</a></li>
+							<li><a href="checkout_page.html"><div class="circle">3</div>checkout</a></li>
+							<li><a href="thank_page.html"><div class="circle">4</div>thanks you</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="sidebar">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="images/foto/room_page/header.jpg">
+						<div class="dark_block">
+							<span>your reservation</span>
+							<div class="wrapper">
+								<div class="dark_block_check">
+									<div class="dark_block_check_title">check-in</div>
+										<div class="dark_block_check_info">
+											<span>26</span>
+											<div>
+												<div>June, 2020</div>
+												<span class="day">Friday</span>
+											</div>
+										</div>
+								</div>
+								<div class="dark_block_check">
+									<div class="dark_block_check_title">check-out</div>
+										<div class="dark_block_check_info">
+											<span>28</span>
+											<div>
+												<div>June, 2020</div>
+												<span class="day">Friday</span>
+											</div>
+										</div>
+								</div>
+							</div>
+							<div class="wrapper">
+								<div class="dark_block_info">
+										<div class="dark_block_info_text">
+											<span>2</span>
+											<div class="text">guests
+											</div>
+										</div>
+								</div>
+								<div class="dark_block_info">
+										<div class="dark_block_info_text">
+											<span>3</span>
+											<div class="text">nights</div>
+										</div>
+								</div>
+							</div>
+						</div>
+						<div class="total_price">
+							300 <sup>$</sup><sub>/ total</sub>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="title">Add Extra Services</div>
+								<div class="services">
+									<div class="services_check col-6">
+										<div class="services_check_var">
+											<div>
+												<input type="checkbox" id="check1" name="a1">
+												<label for="check1"></label>
+											</div>
+											<span><b>Animal Allowed</b>: $ 37.0 / Group / Trip</span>
+										</div>
+										<div class="services_check_var">
+											<div>
+												<input type="checkbox" id="check2" name="a2">
+												<label for="check2"></label>
+											</div>
+											<span><b>Smooking Room</b>: $ 15.0 / Room / Night</span>
+										</div>
+										<div class="services_check_var">
+											<div>
+												<input type="checkbox" id="check3" name="a3">
+												<label for="check3"></label>
+											</div>
+											<span><b>Sea View</b>: $ 15.0 / Room / Night</span>
+										</div>
+									</div>
+									<div class="services_check col-6">
+										<div class="services_check_var">
+											<div>
+												<input type="checkbox" id="check4" name="a4">
+												<label for="check4"></label>
+											</div>
+											<span><b>Swimming Pool</b>: $ 15.0 / Room / Night</span>
+										</div>
+										<div class="services_check_var">
+											<div>
+												<input type="checkbox" id="check5" name="a5">
+												<label for="check5"></label>
+											</div>
+											<span><b>WiFi</b>: $ 15.0 / Room / Night</span>
+										</div>
+										<div class="services_check_var">
+											<div>
+												<input type="checkbox" id="check6" name="a6">
+												<label for="check6"></label>
+											</div>
+											<span><b>Breakfast</b>: $ 15.0 / Room / Night</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="title">Add Your Information</div>
+								<form class="information col-12">
+									<div class="row">
+										<div class="col-md-6">
+											<p>Name:<br><input type="text"></p>
+										</div>
+										<div class="col-md-6">
+											<p>Surname:<br><input type="text"></p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<p>Email:<br><input type="email"></p>
+										</div>
+										<div class="col-md-6">
+											<p>Phone:<br><input type="tel"></p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<p>Adress:<br><input type="text"></p>
+										</div>
+										<div class="col-md-6">
+											<p>City:<br><input type="text"></p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<p>Country:<br><input type="text"></p>
+										</div>
+										<div class="col-md-6">
+											<p>ZIP:<br><input type="text"></p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<p>Requests:<br><textarea></textarea></p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<p>Arrival:<br><input type="text"></p>
+										</div>
+										<div class="col-md-6">
+											<p>Coupon:<br><input type="text"></p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12"><button>book now</button></div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="footer_title">Current Weather</div>
+								<div class="footer_subtitle">Bali, Indonesia</div>
+								<div class="footer_img"><img src="images/icons/sun.png">16<sup>o</sup>C</div>
+							</div>
+							<div class="col-md-4">
+								<div class="footer_title">Connect With Us</div>
+								<div class="footer_subtitle">social media channels</div>
+								<div class="footer_img">
+									<a href="http://instagram.com"><img src="images/icons/inst.png"></a>
+									<a href="http://facebook.com"><img src="images/icons/fb.png"></a>
+									<a href="http://twitter.com"><img src="images/icons/tw.png"></a>
+									<a href="http://pinterest.com"><img src="images/icons/pinterest.png"></a>
+									<a href="http://youtube.com"><img src="images/icons/youtube.png"></a>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="footer_title">Newsletters</div>
+								<div class="footer_subtitle">sign up for special offers</div>
+								<form>
+									<input type="email" name="email" placeholder="Email">
+									<button>search</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/code.js"></script>
+	</body>
+</html>

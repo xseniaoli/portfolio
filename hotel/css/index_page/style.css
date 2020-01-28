@@ -1,0 +1,1317 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default; }
+
+a {
+  cursor: pointer; }
+
+.portfolio {
+  position: fixed;
+  width: 200px;
+  height: 40px;
+  bottom: 75px;
+  right: 75px;
+  padding-top: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  background: #151515;
+  color: #fff;
+  border: 2px solid #151515;
+  border-radius: 3px;
+  text-align: center;
+  font-family: "Roboto", "Arial";
+  font-weight: 400;
+  font-size: 16px;
+  z-index: 999; }
+  .portfolio:hover {
+    text-decoration: none;
+    background: transparent;
+    color: #151515;
+    transition-duration: 0.5s;
+    transition-timing-function: linear; }
+
+.top_header {
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  background: #ffffff;
+  font-family: "Roboto", "Arial";
+  font-weight: 400;
+  font-size: 14px;
+  color: #9a9a9a; }
+  .top_header_left > div {
+    display: inline-block;
+    padding: 10px 0; }
+    .top_header_left > div img {
+      margin-right: 5px; }
+    .top_header_left > div span {
+      padding-right: 20px; }
+  .top_header img {
+    width: 20px;
+    height: 16px; }
+  .top_header_right > a {
+    display: inline-block;
+    padding: 10px 35px 10px 0;
+    color: #9a9a9a; }
+  .top_header_right > a:hover {
+    text-decoration: none; }
+  .top_header button.log_in {
+    width: 115px;
+    margin-right: 15px;
+    border: none;
+    background: #ffffff;
+    font-family: "Gilda Display", sans-serif;
+    font-size: 14px;
+    color: #9a9a9a;
+    outline: none; }
+    .top_header button.log_in img {
+      width: 25px;
+      height: 25px; }
+  .top_header button.sign_in {
+    width: 60px;
+    margin-left: 25px;
+    border: none;
+    background: #ffffff;
+    font-family: "Roboto", "Arial";
+    font-weight: 400;
+    font-size: 14px;
+    color: #9a9a9a;
+    outline: none; }
+  .top_header .lang span:hover, .top_header .pay_options:hover, .top_header .terms:hover,
+  .top_header .review:hover, .top_header .my_booking:hover, .top_header .mail:hover {
+    color: #c19b76;
+    cursor: pointer; }
+  .top_header button.sign_in:hover,
+  .top_header button.log_in:hover {
+    height: 35px;
+    background-color: #c19b76;
+    color: #fff;
+    transition-duration: 0.5s;
+    transition-timing-function: linear; }
+
+/* модальное окно */
+.log_in_modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: none;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4); }
+  .log_in_modal_content {
+    position: relative;
+    background-color: #c19b76;
+    margin: 0 auto;
+    margin-top: 2%;
+    padding: 20px 50px;
+    width: 600px;
+    max-width: 100%;
+    height: 300px;
+    max-height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .log_in_modal_content .log_in_modal_header {
+      width: 100%; }
+      .log_in_modal_content .log_in_modal_header .modal_title {
+        font-family: "Gilda Display", sans-serif;
+        font-size: 30px;
+        color: #fff; }
+
+.sign_in_modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: none;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4); }
+  .sign_in_modal_content {
+    position: relative;
+    background-color: #c19b76;
+    margin: 0 auto;
+    margin-top: 2%;
+    padding: 20px 50px;
+    width: 600px;
+    max-width: 100%;
+    height: 450px;
+    max-height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .sign_in_modal_content .sign_in_modal_header {
+      width: 100%; }
+      .sign_in_modal_content .sign_in_modal_header .modal_title {
+        font-family: "Gilda Display", sans-serif;
+        font-size: 30px;
+        color: #fff; }
+
+.close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer; }
+
+.modal_body {
+  width: 100%; }
+  .modal_body form {
+    text-align: left; }
+    .modal_body form input {
+      display: block;
+      width: 100%;
+      height: 40px;
+      margin: 20px auto;
+      padding: 2px 15px;
+      background-color: #f9f9f9;
+      border: none;
+      outline: none; }
+    .modal_body form input:active, .modal_body form input:focus {
+      border: 2px solid #1c1c1c; }
+    .modal_body form button {
+      left: -50%;
+      width: 150px;
+      height: 40px;
+      background: #1c1c1c;
+      font-family: "Roboto", "Arial";
+      font-weight: 400;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #fff;
+      border: none;
+      outline: none; }
+    .modal_body form button:hover {
+      opacity: 0.9; }
+
+/*меню навигации */
+nav {
+  width: 100%;
+  height: 70px;
+  margin: 0 auto;
+  padding: 20px 0;
+  background: #1c1c1c; }
+  nav .logo {
+    font-family: "Roboto", "Arial";
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #fff; }
+    nav .logo_inner {
+      font-size: 8px;
+      margin-top: -5px;
+      text-align: center; }
+  nav .top_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    nav .top_menu > li {
+      display: block;
+      position: relative;
+      list-style-type: none;
+      font-family: "Roboto", "Arial";
+      font-size: 16px;
+      font-weight: 400;
+      list-style-type: none; }
+      nav .top_menu > li > a {
+        color: #9a9a9a;
+        text-decoration: none; }
+    nav .top_menu > li:hover a {
+      color: #fff;
+      transition-duration: 0.5s;
+      transition-timing-function: linear; }
+    nav .top_menu .inner_menu {
+      background: #1c1c1c;
+      visibility: hidden;
+      opacity: 0;
+      min-width: 200px;
+      min-height: 150px;
+      position: absolute;
+      padding-top: 10px;
+      left: 0;
+      display: none;
+      text-align: left;
+      z-index: 90; }
+      nav .top_menu .inner_menu > li {
+        list-style-type: none;
+        padding: 5px 0; }
+        nav .top_menu .inner_menu > li > a {
+          font-family: "Roboto", "Arial";
+          font-size: 16px;
+          font-weight: 400;
+          color: #9a9a9a;
+          text-transform: uppercase;
+          text-decoration: none; }
+      nav .top_menu .inner_menu > li:hover {
+        background: #151515; }
+      nav .top_menu .inner_menu > li:hover a {
+        color: #fff; }
+    nav .top_menu > li:hover .inner_menu, nav .top_menu > li .inner_menu:hover {
+      display: block;
+      visibility: visible;
+      opacity: 1; }
+
+/*Hamburger icon */
+.menu_icon_wrapper {
+  display: none;
+  width: 30px;
+  height: 30px; }
+
+.mobile_nav {
+  display: none; }
+
+/*шапка сайта */
+header {
+  width: 100%;
+  min-height: 787px;
+  background: url(../../images/foto/video.jpg) center center/cover no-repeat;
+  margin: 0 auto;
+  text-align: center; }
+  header .suptitle {
+    padding-top: 125px;
+    font-family: "Roboto", "Arial";
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+  header hr {
+    margin: 30px auto;
+    border-color: #fff;
+    text-align: center;
+    width: 30px; }
+  header .title {
+    font-family: "Gilda Display", sans-serif;
+    font-size: 56px;
+    letter-spacing: 5px;
+    color: #fff;
+    text-transform: uppercase; }
+  header button.rooms {
+    margin-top: 65px;
+    width: 190px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 12px 10px;
+    font-family: "Roboto", "Arial";
+    font-weight: 900;
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    outline: none; }
+
+.reserve {
+  margin-top: 125px;
+  display: flex;
+  justify-content: space-around; }
+  .reserve_check {
+    width: 545px;
+    height: 135px;
+    background: #fff;
+    padding: 20px 45px;
+    display: flex;
+    justify-content: space-around; }
+    .reserve_check_date_title {
+      font-family: "Roboto", "Arial";
+      font-weight: 400;
+      font-size: 12px;
+      color: #9a9a9a;
+      letter-spacing: 2px;
+      text-transform: uppercase; }
+    .reserve_check_date_info span {
+      font-family: "Gilda Display", sans-serif;
+      font-size: 45px;
+      color: #1c1c1c; }
+    .reserve_check_date_info > div {
+      margin-top: -15px; }
+    .reserve_check_date_info > div > span {
+      font-family: "Gilda Display", sans-serif;
+      font-size: 20px;
+      color: #1c1c1c; }
+    .reserve_check_date_info > div > button {
+      border: none;
+      background: transparent;
+      outline: none; }
+  .reserve button.check {
+    width: 180px;
+    height: 135px;
+    background: #1c1c1c;
+    border: none;
+    font-family: "Roboto", "Arial";
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    outline: none; }
+  .reserve button.check:hover {
+    opacity: 0.9; }
+
+/*section "about us" */
+.about_us {
+  width: 100%;
+  height: 675px;
+  padding-top: 75px; }
+  .about_us_text {
+    margin: 0 auto;
+    text-align: center; }
+    .about_us_text_suptitle {
+      font-family: "Roboto", "Arial";
+      font-weight: 400;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #9a9a9a; }
+      .about_us_text_suptitle img {
+        padding-left: 10px;
+        margin-bottom: 3px; }
+    .about_us_text_title {
+      margin-top: 35px;
+      font-family: "Gilda Display", sans-serif;
+      font-size: 54px;
+      color: #1c1c1c; }
+    .about_us_text_infotext {
+      margin-top: 65px;
+      font-family: "Roboto", "Arial";
+      font-weight: 400;
+      font-size: 12px;
+      color: #9a9a9a;
+      letter-spacing: 1px;
+      line-height: 2; }
+    .about_us_text button.btn_about {
+      margin-top: 50px;
+      width: 140px;
+      height: 45px;
+      border: 3px solid #c19b76;
+      background-color: #c19b76;
+      color: #fff;
+      font-family: "Roboto", "Arial";
+      font-weight: 900;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      outline: none; }
+    .about_us_text button.btn_about:hover {
+      background: inherit;
+      border: 3px solid #c19b76;
+      color: #c19b76;
+      transition-duration: 0.5s;
+      transition-timing-function: linear; }
+  .about_us_foto {
+    margin: 0 auto;
+    position: relative; }
+    .about_us_foto_1 {
+      position: absolute;
+      top: 65px;
+      left: 50px;
+      width: 345px;
+      max-height: 345px;
+      z-index: 3; }
+    .about_us_foto_2 {
+      position: absolute;
+      top: 335px;
+      width: 405px;
+      max-height: 265px;
+      z-index: 5; }
+    .about_us_foto_3 {
+      position: absolute;
+      top: 145px;
+      left: 255px;
+      width: 310px;
+      max-height: 400px;
+      z-index: 7; }
+
+/* secton "best rooms" */
+.best_rooms {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding-top: 75px; }
+  .best_rooms_suptitle {
+    font-family: "Roboto", "Arial";
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #9a9a9a; }
+  .best_rooms hr {
+    margin: 15px auto;
+    border-color: #9a9a9a;
+    text-align: center;
+    width: 30px; }
+  .best_rooms_title {
+    font-family: "Gilda Display", sans-serif;
+    font-size: 54px;
+    color: #1c1c1c; }
+  .best_rooms_blocks {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .best_rooms_blocks_room {
+      position: relative;
+      margin-top: 60px;
+      width: 540px;
+      height: 250px;
+      background: url(../../images/foto/hotel-room.jpg) center center/cover no-repeat; }
+      .best_rooms_blocks_room_info {
+        margin-top: 185px;
+        padding: 30px 30px;
+        width: inherit;
+        height: 65px;
+        background: linear-gradient(0deg, #000 45%, transparent 100%);
+        font-family: "Roboto", "Arial";
+        font-weight: 400;
+        font-size: 14px;
+        color: #fff;
+        text-align: left; }
+        .best_rooms_blocks_room_info img {
+          padding-left: 5px;
+          margin-bottom: 2px; }
+        .best_rooms_blocks_room_info_fullroom > div {
+          margin-bottom: 10px; }
+        .best_rooms_blocks_room_info_fullroom {
+          opacity: 0;
+          visibility: hidden;
+          position: absolute;
+          padding: 20px 40px 10px 30px;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(255, 255, 255, 0.8); }
+          .best_rooms_blocks_room_info_fullroom_title {
+            font-family: "Gilda Display", sans-serif;
+            font-size: 25px;
+            color: #1c1c1c; }
+          .best_rooms_blocks_room_info_fullroom_about > div {
+            margin-right: 15px; }
+          .best_rooms_blocks_room_info_fullroom_about {
+            display: flex;
+            justify-content: left;
+            margin-right: 10px;
+            font-family: "Roboto", "Arial";
+            text-transform: uppercase;
+            color: #9a9a9a; }
+            .best_rooms_blocks_room_info_fullroom_about_square {
+              width: 25px;
+              height: 20px;
+              background: #1c1c1c;
+              text-align: center; }
+          .best_rooms_blocks_room_info_fullroom_text {
+            font-family: "Roboto", "Arial";
+            font-weight: 400;
+            font-size: 12px;
+            color: #9a9a9a;
+            letter-spacing: 1px;
+            line-height: 2;
+            color: #9a9a9a; }
+          .best_rooms_blocks_room_info_fullroom button {
+            width: 220px;
+            height: 45px;
+            border: none;
+            background: #1c1c1c;
+            font-family: "Roboto", "Arial";
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #fff;
+            outline: none; }
+          .best_rooms_blocks_room_info_fullroom button:hover {
+            opacity: 0.9; }
+  .best_rooms .best_rooms_blocks_room:hover .best_rooms_blocks_room_info_fullroom {
+    opacity: 1;
+    visibility: visible;
+    transition-duration: 1.5s;
+    transition-timing-function: easy-out; }
+
+/* section "big block" */
+.big_block {
+  margin-top: 75px;
+  width: 100%;
+  height: 640px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(320px, 50%));
+  grid-template-areas: "images textinfo"; }
+  .big_block_images {
+    grid-area: images;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, 50%); }
+    .big_block_images img {
+      width: 100%;
+      height: 320px; }
+  .big_block_info {
+    grid-area: textinfo;
+    background-color: #1c1c1c;
+    padding: 90px 140px 90px 100px; }
+    .big_block_info_subtitle {
+      font-family: "Roboto", "Arial";
+      font-weight: 400;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #fff; }
+    .big_block_info_title {
+      font-family: "Gilda Display", sans-serif;
+      font-size: 54px;
+      color: #fff; }
+      .big_block_info_title span {
+        color: #c19b76; }
+    .big_block_info_text {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 1fr);
+      grid-gap: 25px;
+      font-family: "Roboto", "Arial";
+      font-weight: 400;
+      font-size: 12px;
+      color: #9a9a9a;
+      letter-spacing: 1px;
+      line-height: 2; }
+    .big_block_info button {
+      margin-top: 45px;
+      width: 220px;
+      height: 45px;
+      border: none;
+      background: #151515;
+      font-family: "Roboto", "Arial";
+      font-weight: 900;
+      font-size: 12px;
+      color: #fff;
+      text-transform: uppercase;
+      outline: none; }
+    .big_block_info button:hover {
+      opacity: 0.9; }
+
+/*section "our services" */
+.our_services {
+  width: 100%;
+  min-height: 1440px;
+  margin: 0 auto;
+  padding-top: 75px;
+  text-align: center;
+  background: #f9f9f9; }
+  .our_services_title {
+    font-family: "Gilda Display", sans-serif;
+    font-size: 24px;
+    color: #1c1c1c; }
+  .our_services_wrapper {
+    margin-top: 150px; }
+    .our_services_wrapper_slider {
+      width: 100%;
+      height: 525px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: flex-end;
+      justify-content: center;
+      background: #fff; }
+      .our_services_wrapper_slider_nav {
+        width: 12px;
+        height: 12px;
+        margin: 2rem 12px;
+        border-radius: 50%;
+        z-index: 10;
+        outline: 6px solid #a3a3a3;
+        outline-offset: -6px;
+        box-shadow: 0 0 0 0 #c19b76, 0 0 0 0 rgba(193, 155, 118, 0);
+        cursor: pointer;
+        appearance: none; }
+      .our_services_wrapper_slider_nav:checked {
+        animation: check 0.5s linear forwards; }
+        .our_services_wrapper_slider_nav:checked:nth-of-type(1) ~ .our_services_wrapper_slider_inner {
+          transform: translateX(0%); }
+        .our_services_wrapper_slider_nav:checked:nth-of-type(2) ~ .our_services_wrapper_slider_inner {
+          transform: translateX(-33.3333333333%); }
+        .our_services_wrapper_slider_nav:checked:nth-of-type(3) ~ .our_services_wrapper_slider_inner {
+          transform: translateX(-66.6666666667%); }
+      .our_services_wrapper_slider_inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300%;
+        height: 100%;
+        transition: all 1s ease-out;
+        display: flex;
+        flex-flow: row nowrap; }
+        .our_services_wrapper_slider_inner_contents {
+          height: 100%;
+          padding: 2rem;
+          text-align: center;
+          display: flex;
+          flex: 1;
+          flex-flow: column nowrap;
+          align-items: center;
+          justify-content: center; }
+          .our_services_wrapper_slider_inner_contents_suptitle {
+            font-family: "Roboto", "Arial";
+            font-weight: 400;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #1c1c1c; }
+          .our_services_wrapper_slider_inner_contents hr {
+            margin: 15px auto;
+            border-color: #1c1c1c;
+            text-align: center;
+            width: 30px; }
+          .our_services_wrapper_slider_inner_contents_title {
+            font-family: "Gilda Display", sans-serif;
+            font-size: 34px;
+            color: #1c1c1c; }
+          .our_services_wrapper_slider_inner_contents_text {
+            margin-top: 45px;
+            font-family: "Roboto", "Arial";
+            font-weight: 400;
+            font-size: 12px;
+            color: #9a9a9a;
+            letter-spacing: 1px;
+            line-height: 2; }
+          .our_services_wrapper_slider_inner_contents button {
+            margin-top: 45px;
+            width: 155px;
+            height: 45px;
+            border: 2px solid #c19b76;
+            background-color: inherit;
+            font-family: "Roboto", "Arial";
+            font-size: 12px;
+            font-weight: 900;
+            color: #c19b76;
+            text-transform: uppercase;
+            outline: none; }
+          .our_services_wrapper_slider_inner_contents button:hover {
+            background: #c19b76;
+            color: #fff;
+            transition-duration: 0.5s;
+            transition-timing-function: linear; }
+  .our_services_wrap {
+    margin-top: 150px; }
+    .our_services_wrap_slide {
+      width: 100%;
+      height: 525px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: flex-end;
+      justify-content: center;
+      background: #fff; }
+      .our_services_wrap_slide_nav {
+        width: 12px;
+        height: 12px;
+        margin: 2rem 12px;
+        border-radius: 50%;
+        z-index: 10;
+        outline: 6px solid #a3a3a3;
+        outline-offset: -6px;
+        box-shadow: 0 0 0 0 #c19b76, 0 0 0 0 rgba(193, 155, 118, 0);
+        cursor: pointer;
+        appearance: none; }
+      .our_services_wrap_slide_nav:checked {
+        animation: switch 0.5s linear forwards; }
+        .our_services_wrap_slide_nav:checked:nth-of-type(1) ~ .our_services_wrap_slide_inner {
+          transform: translateX(0%); }
+        .our_services_wrap_slide_nav:checked:nth-of-type(2) ~ .our_services_wrap_slide_inner {
+          transform: translateX(-33.3333333333%); }
+        .our_services_wrap_slide_nav:checked:nth-of-type(3) ~ .our_services_wrap_slide_inner {
+          transform: translateX(-66.6666666667%); }
+      .our_services_wrap_slide_inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300%;
+        height: 100%;
+        transition: all 1s ease-out;
+        display: flex;
+        flex-flow: row nowrap; }
+        .our_services_wrap_slide_inner_cont {
+          height: 100%;
+          padding: 2rem;
+          text-align: center;
+          display: flex;
+          flex: 1;
+          flex-flow: column nowrap;
+          align-items: center;
+          justify-content: center; }
+          .our_services_wrap_slide_inner_cont_suptitle {
+            font-family: "Roboto", "Arial";
+            font-weight: 400;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #1c1c1c; }
+          .our_services_wrap_slide_inner_cont hr {
+            margin: 15px auto;
+            border-color: #1c1c1c;
+            text-align: center;
+            width: 30px; }
+          .our_services_wrap_slide_inner_cont_title {
+            font-family: "Gilda Display", sans-serif;
+            font-size: 34px;
+            color: #1c1c1c; }
+          .our_services_wrap_slide_inner_cont_text {
+            margin-top: 45px;
+            font-family: "Roboto", "Arial";
+            font-weight: 400;
+            font-size: 12px;
+            color: #9a9a9a;
+            letter-spacing: 1px;
+            line-height: 2; }
+          .our_services_wrap_slide_inner_cont button {
+            margin-top: 45px;
+            width: 155px;
+            height: 45px;
+            border: 2px solid #c19b76;
+            background-color: inherit;
+            font-family: "Roboto", "Arial";
+            font-size: 12px;
+            font-weight: 900;
+            color: #c19b76;
+            text-transform: uppercase;
+            outline: none; }
+          .our_services_wrap_slide_inner_cont button:hover {
+            background: #c19b76;
+            color: #fff;
+            transition-duration: 0.5s;
+            transition-timing-function: linear; }
+    .our_services_wrap img {
+      width: 580px;
+      height: 525px;
+      padding: 0;
+      /*radiotype animation */ }
+@keyframes check {
+  100% {
+    outline-color: #c19b76;
+    box-shadow: 0 0 0 0 #c19b76, 0 0 0 0 rgba(193, 155, 118, 0); } }
+@keyframes switch {
+  100% {
+    outline-color: #c19b76;
+    box-shadow: 0 0 0 0 #c19b76, 0 0 0 0 rgba(193, 155, 118, 0); } }
+/*video section */
+.video iframe {
+  width: 100%;
+  height: 640px; }
+
+/*section our blog */
+.blog {
+  width: 100%;
+  min-height: 1095px;
+  margin: 0 auto;
+  padding-top: 75px;
+  text-align: center; }
+  .blog_suptitle {
+    font-family: "Roboto", "Arial";
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #9a9a9a; }
+  .blog hr {
+    margin: 15px auto;
+    border-color: #9a9a9a;
+    text-align: center;
+    width: 30px; }
+  .blog_title {
+    font-family: "Gilda Display", sans-serif;
+    font-size: 54px;
+    color: #1c1c1c; }
+  .blog_wrapper {
+    margin-top: 60px; }
+    .blog_wrapper_blocks img {
+      width: 100%;
+      height: 265px; }
+    .blog_wrapper_blocks_follow {
+      width: 100%;
+      max-height: 235px;
+      margin-bottom: 30px;
+      padding: 45px 60px;
+      background-color: #c19b76;
+      font-family: "Gilda Display", sans-serif;
+      font-size: 26px;
+      color: #fff;
+      text-align: center; }
+      .blog_wrapper_blocks_follow hr {
+        text-align: center;
+        width: 30px;
+        border-color: #fff; }
+      .blog_wrapper_blocks_follow div > sup {
+        font-size: 40px; }
+    .blog_wrapper_blocks_info {
+      text-align: left; }
+      .blog_wrapper_blocks_info_suptitle {
+        margin-top: 30px;
+        font-family: "Roboto", "Arial";
+        font-weight: 400;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #1c1c1c; }
+      .blog_wrapper_blocks_info p {
+        margin-top: 15px;
+        width: 30px;
+        border-bottom: 1px solid #1c1c1c; }
+      .blog_wrapper_blocks_info_title {
+        font-family: "Gilda Display", sans-serif;
+        font-size: 26px;
+        color: #1c1c1c; }
+      .blog_wrapper_blocks_info_text {
+        margin-top: 35px;
+        font-family: "Roboto", "Arial";
+        font-weight: 400;
+        font-size: 12px;
+        color: #9a9a9a;
+        letter-spacing: 1px;
+        line-height: 2; }
+      .blog_wrapper_blocks_info button {
+        margin-top: 25px;
+        width: 155px;
+        height: 45px;
+        border: 2px solid #c19b76;
+        background-color: inherit;
+        font-family: "Roboto", "Arial";
+        font-size: 12px;
+        font-weight: 900;
+        color: #c19b76;
+        text-transform: uppercase;
+        outline: none; }
+      .blog_wrapper_blocks_info button:hover {
+        background: #c19b76;
+        color: #fff;
+        transition-duration: 0.5s;
+        transition-timing-function: linear; }
+    .blog_wrapper_blocks_btn {
+      margin-top: 60px;
+      width: 100%;
+      height: 135px;
+      background-color: #1c1c1c;
+      text-align: center;
+      padding-top: 55px; }
+      .blog_wrapper_blocks_btn img {
+        width: 20px;
+        height: 20px;
+        margin-right: 15px; }
+      .blog_wrapper_blocks_btn a {
+        text-decoration: none;
+        font-family: "Gilda Display", sans-serif;
+        font-size: 22px;
+        color: #fff; }
+    .blog_wrapper_blocks_btn:hover {
+      opacity: 0.9; }
+    .blog_wrapper_news .img_wrap {
+      position: relative; }
+      .blog_wrapper_news .img_wrap_foto1 {
+        width: 100%;
+        max-height: 410px; }
+      .blog_wrapper_news .img_wrap_info {
+        position: absolute;
+        padding: 35px 25px;
+        top: 200px;
+        text-align: left; }
+        .blog_wrapper_news .img_wrap_info_suptitle {
+          font-family: "Roboto", "Arial";
+          font-weight: 400;
+          font-size: 14px;
+          text-transform: uppercase;
+          color: #fff; }
+        .blog_wrapper_news .img_wrap_info p {
+          margin-top: 15px;
+          width: 30px;
+          border-bottom: 1px solid #fff; }
+        .blog_wrapper_news .img_wrap_info_title {
+          font-family: "Gilda Display", sans-serif;
+          font-size: 26px;
+          color: #fff; }
+        .blog_wrapper_news .img_wrap_info a {
+          text-decoration: none;
+          font-family: "Roboto", "Arial";
+          font-size: 12px;
+          font-weight: 400;
+          text-transform: uppercase;
+          color: #fff; }
+          .blog_wrapper_news .img_wrap_info a img {
+            margin-top: -2px;
+            margin-left: 10px; }
+      .blog_wrapper_news .img_wrap_foto2 {
+        margin-top: 25px;
+        width: 100%;
+        max-height: 270px; }
+      .blog_wrapper_news .img_wrap_info2 {
+        position: absolute;
+        padding: 35px 25px;
+        top: 35px;
+        text-align: left; }
+        .blog_wrapper_news .img_wrap_info2_suptitle {
+          font-family: "Roboto", "Arial";
+          font-weight: 400;
+          font-size: 14px;
+          text-transform: uppercase;
+          color: #fff; }
+        .blog_wrapper_news .img_wrap_info2 p {
+          margin-top: 15px;
+          width: 30px;
+          border-bottom: 1px solid #fff; }
+        .blog_wrapper_news .img_wrap_info2_title {
+          font-family: "Gilda Display", sans-serif;
+          font-size: 26px;
+          color: #fff; }
+        .blog_wrapper_news .img_wrap_info2 a {
+          text-decoration: none;
+          font-family: "Roboto", "Arial";
+          font-size: 12px;
+          font-weight: 400;
+          text-transform: uppercase;
+          color: #fff; }
+          .blog_wrapper_news .img_wrap_info2 a img {
+            margin-top: -2px;
+            margin-left: 10px; }
+
+/*footer */
+footer {
+  margin-top: 30px;
+  width: 100%;
+  height: 245px;
+  background-color: #1c1c1c; }
+  footer .footer_title {
+    margin-top: 65px;
+    font-family: "Gilda Display", sans-serif;
+    font-size: 20px;
+    color: #fff; }
+  footer .footer_subtitle {
+    font-family: "Roboto", "Arial";
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #9a9a9a;
+    letter-spacing: 2px; }
+  footer .footer_img {
+    margin-top: 15px;
+    font-family: "Gilda Display", sans-serif;
+    font-size: 26px;
+    color: #fff; }
+    footer .footer_img img {
+      margin-right: 15px;
+      cursor: pointer; }
+  footer form {
+    margin-top: 15px;
+    height: 45px;
+    display: flex;
+    justify-content: left; }
+    footer form input {
+      width: 255px;
+      height: inherit;
+      background-color: #151515;
+      border: none;
+      padding-left: 15px;
+      outline: none; }
+    footer form input:active, footer form input:focus {
+      border: 2px solid #c19b76; }
+    footer form button {
+      width: 90px;
+      height: inherit;
+      background-color: #c19b76;
+      border: 3px solid #c19b76;
+      font-family: "Roboto", "Arial";
+      font-weight: 900;
+      font-size: 10px;
+      text-transform: uppercase;
+      color: #fff;
+      outline: none; }
+    footer form button:hover {
+      background: inherit;
+      border: 3px solid #c19b76;
+      color: #c19b76;
+      transition-duration: 0.5s;
+      transition-timing-function: linear; }
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .top_header {
+    padding: 10px 0; }
+    .top_header span {
+      padding-right: 5px; }
+    .top_header_right > a {
+      display: inline-block;
+      padding: 10px 5px 10px 0; }
+
+  nav .logo_inner {
+    text-align: left;
+    padding-left: 2rem; }
+
+  .about_us_foto_1 {
+    width: 300px; }
+  .about_us_foto_2 {
+    width: 355px; }
+  .about_us_foto_3 {
+    width: 275px; }
+
+  .best_rooms_blocks_room {
+    width: 440px;
+    height: 250px;
+    background: url(../../images/foto/hotel-room.jpg) center center/cover no-repeat; }
+    .best_rooms_blocks_room_info {
+      width: 440px; }
+
+  .big_block {
+    height: 560px; }
+    .big_block_images {
+      display: flex;
+      flex-direction: column; }
+      .big_block_images img {
+        height: 185px; }
+    .big_block_info {
+      padding: 90px 85px; }
+
+  .our_services {
+    margin-top: 230px; } }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .top_header, .big_block {
+    display: none; }
+
+  nav .logo_inner {
+    text-align: left;
+    padding-left: 2rem; }
+  nav .top_menu {
+    display: none; }
+  nav .menu_icon_wrapper {
+    display: block;
+    margin-top: -20px; }
+    nav .menu_icon_wrapper .menu_icon {
+      z-index: 20;
+      cursor: pointer;
+      position: relative;
+      width: 30px;
+      height: 5px;
+      background-color: #fff; }
+      nav .menu_icon_wrapper .menu_icon::before {
+        position: absolute;
+        top: -10px;
+        left: 0;
+        content: "";
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: #fff;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s; }
+      nav .menu_icon_wrapper .menu_icon::after {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        content: "";
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: #fff;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s; }
+  nav .menu_icon_wrapper.menu_icon_active .menu_icon {
+    background: transparent; }
+  nav .menu_icon_wrapper.menu_icon_active .menu_icon::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s; }
+  nav .menu_icon_wrapper.menu_icon_active .menu_icon::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s; }
+  nav .mobile_nav {
+    z-index: 7;
+    display: block;
+    position: absolute;
+    right: -350px;
+    top: 0;
+    min-height: 860px;
+    width: 350px;
+    padding: 50px;
+    background-color: #1c1c1c;
+    transition: transform 0.4s ease-in; }
+    nav .mobile_nav .mobile_nav_link {
+      display: block;
+      text-decoration: none;
+      font-family: "Gilda Display", sans-serif;
+      color: #fff;
+      font-size: 18px;
+      padding-bottom: 12px; }
+    nav .mobile_nav .mobile_nav_link:hover {
+      color: #c19b76; }
+  nav .mobile_nav_inactive {
+    transform: translateX(-100%); }
+
+  .about_us {
+    padding-top: 50px; }
+    .about_us_foto {
+      display: none; }
+
+  .our_services_wrapper {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-self: center; }
+    .our_services_wrapper_slider {
+      width: 100%; }
+    .our_services_wrapper .our_services_wrap_slide {
+      width: 100%; }
+    .our_services_wrapper img {
+      margin: 5px 0; }
+
+  .blog_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-self: center; }
+    .blog_wrapper_blocks {
+      padding-bottom: 15px; } }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .top_header, .big_block, .about_us_foto {
+    display: none; }
+
+  nav .logo {
+    font-size: 16px; }
+    nav .logo_inner {
+      display: none; }
+  nav .top_menu {
+    display: none; }
+  nav .menu_icon_wrapper {
+    display: block;
+    margin-top: -20px;
+    right: 30px; }
+    nav .menu_icon_wrapper .menu_icon {
+      z-index: 20;
+      cursor: pointer;
+      position: relative;
+      width: 30px;
+      height: 5px;
+      background-color: #fff; }
+      nav .menu_icon_wrapper .menu_icon::before {
+        position: absolute;
+        top: -10px;
+        left: 0;
+        content: "";
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: #fff;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s; }
+      nav .menu_icon_wrapper .menu_icon::after {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        content: "";
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: #fff;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s; }
+  nav .menu_icon_wrapper.menu_icon_active .menu_icon {
+    background: transparent; }
+  nav .menu_icon_wrapper.menu_icon_active .menu_icon::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s; }
+  nav .menu_icon_wrapper.menu_icon_active .menu_icon::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s; }
+  nav .mobile_nav {
+    z-index: 7;
+    display: block;
+    position: absolute;
+    right: -350px;
+    top: 0;
+    height: 860px;
+    width: 350px;
+    padding: 50px;
+    background-color: #1c1c1c;
+    transition: transform 0.4s ease-in; }
+    nav .mobile_nav .mobile_nav_link {
+      display: block;
+      text-decoration: none;
+      font-family: "Gilda Display", sans-serif;
+      color: #fff;
+      font-size: 18px;
+      padding-bottom: 12px; }
+    nav .mobile_nav .mobile_nav_link:hover {
+      color: #c19b76; }
+  nav .mobile_nav_inactive {
+    transform: translateX(-100%); }
+
+  header .title {
+    font-size: 36px; }
+  header .suptitle {
+    padding-top: 85px; }
+  header .reserve {
+    flex-wrap: wrap; }
+    header .reserve_check {
+      padding: 20px 15px; }
+    header .reserve button.check {
+      width: 100%;
+      height: 45px; }
+
+  .best_rooms_blocks_room {
+    width: 100%; }
+    .best_rooms_blocks_room_info_fullroom {
+      padding: 5px; }
+      .best_rooms_blocks_room_info_fullroom_title {
+        font-size: 20px; }
+      .best_rooms_blocks_room_info_fullroom_about > div {
+        margin-right: 2px; }
+      .best_rooms_blocks_room_info_fullroom_about {
+        display: flex;
+        justify-content: left;
+        font-family: "Roboto", "Arial";
+        text-transform: uppercase;
+        color: #9a9a9a; }
+        .best_rooms_blocks_room_info_fullroom_about_square {
+          width: 25px;
+          height: 20px;
+          background: #1c1c1c;
+          text-align: center; }
+      .best_rooms_blocks_room_info_fullroom_text {
+        font-family: "Roboto", "Arial";
+        font-weight: 400;
+        font-size: 12px;
+        color: #9a9a9a;
+        letter-spacing: 1px;
+        line-height: 2;
+        color: #9a9a9a; }
+      .best_rooms_blocks_room_info_fullroom button {
+        width: 175px;
+        height: 35px; }
+
+  .our_services_wrapper {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-self: center; }
+    .our_services_wrapper_slider {
+      width: 100%; }
+    .our_services_wrapper .our_services_wrap_slide {
+      width: 100%; }
+    .our_services_wrapper img {
+      margin: 5px 0; }
+
+  .blog_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-self: center; }
+    .blog_wrapper_blocks {
+      padding-bottom: 15px; }
+
+  footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px; } }
+
+/*# sourceMappingURL=style.css.map */

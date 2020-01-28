@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width">
+		<link href="https://fonts.googleapis.com/css?family=Gilda+Display|Roboto:300,400,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/room_page/style.css">
+		<title>Single Room page</title>
+	</head>
+	<body>
+		<a href="../index.html" class="portfolio" title="Вернуться к главной странице портфолио">Вернуться к портфолио</a>
+		<div class="top_header">
+			<div class="container">
+				<div class="row">
+					<div class="top_header_left col-xl-5 col-lg-6">
+						<div class="lang">
+							<span>EN</span>
+							<span>RU</span>
+							<span>DE</span>
+						</div>
+						<div class="pay_options">
+							<img src="images/icons/credit-card.png" alt="credit card icon">
+							<span>Payment Options</span>
+						</div>
+						<div class="terms">
+							<img src="images/icons/check-square.png" alt="check icon">
+							<span>Terms Conditions</span>
+						</div>
+					</div>
+					<div class="top_header_right col-xl-6 offset-xl-1 col-lg-6">
+						<a href="#" class="review">Add Your Review</a>
+						<a href="#" class="mail"><img src="images/icons/envelope.png" alt="mail icon"></a>
+						<a href="#" class="my_booking">My Bookings</a>
+						<button id="log_in_btn" class="log_in">
+							<img src="images/icons/default-avatar.png" alt="default avatar icon"> My Account
+						</button>
+						<div id="log_in_modal" class="log_in_modal">
+							<div class="log_in_modal_content">
+								<div class="log_in_modal_header">
+									<span id="log_in_cls" class="close">&times;</span>
+									<div class="modal_title">Welcome back!</div>
+								</div>
+								<div class="modal_body">
+									<form>
+										<input type="text" name="login" placeholder="Login or email:">
+										<input type="password" name="password" placeholder="Password:">
+										<button>log in</button>
+									</form>
+								</div>
+							</div>
+						</div>
+						<button id="sign_in_btn" class="sign_in">SIGN IN</button>
+						<div id="sign_in_modal" class="sign_in_modal">
+							<div class="sign_in_modal_content">
+								<div class="sign_in_modal_header">
+									<span id="sign_in_cls" class="close">&times;</span>
+									<div class="modal_title">Create Your Account</div>
+								</div>
+								<div class="modal_body">
+									<form>
+										<input type="text" name="name" placeholder="Name:">
+										<input type="text" name="surname" placeholder="Surname:">
+										<input type="text" name="login" placeholder="Login:">
+										<input type="email" name="email" placeholder="Email:">
+										<input type="password" name="password" placeholder="Password:">
+										<button>sing in</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav>
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-2 col-lg-3 col-4 logo">Logo hotel<div class="logo_inner">luxury hotel</div></div>
+					<div class="col-xl-7 offset-xl-3 col-lg-7 offset-lg-2">
+						<ul class="top_menu">
+							<li><a href="index.html">Home</a>
+								<ul class="inner_menu">
+									<li><a href="index.html#about">About Us</a></li>
+									<li><a href="index.html#best">Best Rooms</a></li>
+									<li><a href="index.html#services">Our Services</a></li>
+								</ul>
+							</li>
+							<li><a href="search_page.html">Rooms</a></li>
+							<li><a href="room_page.html">Single Room</a></li>
+							<li><a href="#">Booking</a>
+								<ul class="inner_menu">
+									<li><a href="search_page.html">Search Room</a></li>
+									<li><a href="booking_page.html">Booking</a></li>
+									<li><a href="checkout_page.html">Checkout</a></li>
+									<li><a href="thank_page.html">Thanks You</a></li>
+								</ul>
+							</li>
+							<li><a href="index.html#blog">Our News</a></li>
+							<li><a href="contact_page.html">Contact</a></li>
+						</ul>
+					</div>
+					<div id="mobile_icon" class="menu_icon_wrapper col-1 offset-11">
+						<div class="menu_icon"></div>
+					</div>
+					<div id="mobile_nav" class="mobile_nav">
+                        <div class="mobile_nav_list">
+							<a href="index.html" class="mobile_nav_link">Home</a>
+							<a href="search_page.html" class="mobile_nav_link">Rooms</a>
+							<a href="booking_page.html" class="mobile_nav_link">Booking</a>
+							<a href="index.html#blog" class="mobile_nav_link">Our News</a>
+							<a href="contact_page.html" class="mobile_nav_link">Contact</a>
+							<a href="#" class="mobile_nav_link">Payment Options</a>
+							<a href="#" class="mobile_nav_link">Terms Conditions</a>
+							<a href="#" class="mobile_nav_link">My Account</a>
+							<a href="#" class="mobile_nav_link">SIGN IN</a>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</nav>
+		<header>
+			<div class="gradient">
+				<div class="container">
+					<div class="row">
+						<ul class="navigation col-md-7">
+							<li><a href="#descript">description</a></li>
+							<li><a href="#services">room services</a></li>
+							<li><a href="#gallery">gallery</a></li>
+							<li><a href="#reviews">reviews</a></li>
+						</ul>
+						<div class="price col-md-4 offset-md-1 col-12">
+							300 <sup>$</sup><sub>/ holiday</sub>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="main">
+			<div class="container">
+				<div class="row">
+					<div class="main_about col-md-8">
+						<div class="main_about_title">Luxury Hotel With Sea View</div>
+						<div class="main_about_subtitle">
+							london hotel
+							<img src="images/icons/icon-star.png" alt="">
+							<img src="images/icons/icon-star.png" alt="">
+							<img src="images/icons/icon-star.png" alt="">
+						</div>
+						<div class="main_about_photo">
+							<div class="main_about_photo_gradient">
+								<div class="main_about_photo_gradient_square">7.5</div>
+								<div class="main_about_photo_gradient_reviews">5 reviews</div>
+							</div>
+						</div>
+						<div id="descript" class="main_about_info">
+							<div>
+								<img src="images/icons/room_page/user.png">
+								<div>3 guests</div>
+							</div>
+							<div>
+								<img src="images/icons/room_page/plan.png">
+								<div>25 m<sup>2</sup></div>
+							</div>
+							<div>
+								<img src="images/icons/room_page/bed.png">
+								<div>30 $ / for night</div>
+							</div>
+							<div>
+								<img src="images/icons/room_page/calendar.png">
+								<div>week price</div>
+							</div>
+						</div>
+						<div  class="main_about_text">
+							<p>Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat dignissim. Sed quis rutrum tellus, sit amet viverra felis. Cras sagittis sem sit amet urna feugiat rutrum. Nam nulla ipsum, venenatis malesuada felis quis, ultricies convallis neque. Pellentesque tristique fringilla tempus. Vivamus bibendum nibh in dolor pharetra, a euismod nulla dignissim. Aenean viverra tincidunt nibh, in imperdiet nunc.</p>
+							<p>Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat dignissim. Sed quis rutrum tellus, sit amet viverra felis. Cras sagittis sem sit amet urna feugiat rutrum. Nam nulla ipsum, venenatis malesuada felis quis, ultricies convallis neque. Pellentesque tristique fringilla tempus. Vivamus bibendum nibh in dolor pharetra, a euismod nulla dignissim. Aenean viverra tincidunt nibh, in imperdiet nunc. Suspendisse eu.</p>
+						</div>
+						<div id="services" class="main_room_services">
+							<div class="main_room_services_title">Room Services</div>
+							<div class="row">
+								<div class="main_room_services_info col-4">
+									<div><img src="images/icons/room_page/tv.png">Television</div>
+									<div><img src="images/icons/room_page/bath.png">Bathroom</div>
+									<div><img src="images/icons/room_page/cocktail.png">Welcome Drink</div>
+								</div>
+								<div class="main_room_services_info col-4">
+									<div><img src="images/icons/room_page/no-smoking.png">No Smoking</div>
+									<div><img src="images/icons/room_page/bike.png">Bike Renta</div>
+									<div><img src="images/icons/room_page/towel.png">Loundry</div>
+								</div>
+								<div class="main_room_services_info col-4">
+									<div><img src="images/icons/room_page/summer.png">Private Beach</div>
+									<div><img src="images/icons/room_page/cutlery.png">Breakfast Incl.</div>
+									<div><img src="images/icons/room_page/beds.png">King Beds</div>
+								</div>
+							</div>
+						</div>
+						<div id="gallery" class="main_around_us">
+							<div class="main_around_us_title">Around the Hotel</div>
+							<div class="row">
+								<div class="col-lg-4">
+									<img src="images/foto/room_page/gallery1.jpg">
+								</div>
+								<div class="col-lg-4">
+									<img src="images/foto/room_page/gallery2.jpg">
+								</div>
+								<div class="col-lg-4">
+									<img src="images/foto/room_page/gallery3.jpg">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main_info col-md-4">
+						<div class="dark_block">
+							<div class="dark_block_people">
+								<div>1 Guest</div>
+								<button><img src="images/arrows/down-arrow.png"></button>
+							</div>
+							<div class="wrapper">
+								<div class="dark_block_check">
+									<div class="dark_block_check_title">check-in</div>
+										<div class="dark_block_check_info">
+											<span>26</span>
+											<div>
+												<div>June, 2020</div>
+												<span class="day">Friday</span>
+												<button><img src="images/arrows/down-arrow.png"></button>
+											</div>
+										</div>
+								</div>
+								<div class="dark_block_check">
+									<div class="dark_block_check_title">check-out</div>
+										<div class="dark_block_check_info">
+											<span>28</span>
+											<div>
+												<div>June, 2020</div>
+												<span class="day">sunday</span>
+												<button><img src="images/arrows/down-arrow.png"></button>
+											</div>
+										</div>
+								</div>
+							</div>
+							<button class="dark_block_btn">book now</button>
+						</div>
+						<div class="best_room">
+							<div class="best_room_title">Best Rooms</div>
+							<div class="best_room_block">
+								<div class="best_room_block_wrap">
+									<img src="images/foto/hotel-room.jpg" alt="">
+									<div class="best_room_block_wrap_text">
+										<div class="best_room_block_wrap_title">Family Room</div>
+										<div class="best_room_block_wrap_subtitle">by John Doe on 02/03/2020</div>
+										<button>book now</button>
+									</div>
+								</div>
+								<div class="best_room_block_wrap">
+									<img src="images/foto/hotel-room.jpg" alt="">
+									<div class="best_room_block_wrap_text">
+										<div class="best_room_block_wrap_title">Family Room</div>
+										<div class="best_room_block_wrap_subtitle">by John Doe on 02/03/2020</div>
+										<button>book now</button>
+									</div>
+								</div>
+								<div class="best_room_block_wrap">
+									<img src="images/foto/hotel-room.jpg" alt="">
+									<div class="best_room_block_wrap_text">
+										<div class="best_room_block_wrap_title">Family Room</div>
+										<div class="best_room_block_wrap_subtitle">by John Doe on 02/03/2020</div>
+										<button>book now</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="categories">
+							<div class="categories_title">Categories</div>
+							<div class="categories_block">
+								<div class="categories_block_wrap">
+									<button><img src="images/arrows/up-arrow.png"></button>
+									<div>Luxury Hotels ( 10 )</div>
+								</div>
+								<div class="categories_block_wrap">
+									<button><img src="images/arrows/up-arrow.png"></button>
+									<div>Family Residence ( 20 )</div>
+								</div>
+								<div class="categories_block_wrap">
+									<button><img src="images/arrows/up-arrow.png"></button>
+									<div>Relax Villas ( 12 )</div>
+								</div>
+							</div>
+						</div>
+						<div class="our_branches">
+							<div class="our_branches_title">Our Branches</div>
+							<div class="our_branches_block">
+								<div class="our_branches_block_wrap">
+									<img src="images/foto/room_page/hotel.jpg" alt="">
+									<div class="our_branches_block_wrap_text">
+										<div class="our_branches_block_wrap_title">Hotel England London</div>
+										<div class="our_branches_block_wrap_subtitle">by John Doe on 02/03/2020</div>
+										<div class="our_branches_block_wrap_stars">
+											<img src="images/icons/icon-star.png">
+											<img src="images/icons/icon-star.png">
+											<img src="images/icons/icon-star.png">
+											<img src="images/icons/icon-star.png">
+											<img src="images/icons/icon-star.png">
+										</div>
+									</div>
+								</div>
+								<div class="our_branches_block_wrap">
+									<img src="images/foto/room_page/hotel.jpg" alt="">
+									<div class="our_branches_block_wrap_text">
+										<div class="our_branches_block_wrap_title">Hotel England London</div>
+										<div class="our_branches_block_wrap_subtitle">by John Doe on 02/03/2020</div>
+										<div class="our_branches_block_wrap_stars">
+											<img src="images/icons/icon-star.png">
+											<img src="images/icons/icon-star.png">
+											<img src="images/icons/icon-star.png">
+										</div>
+									</div>
+								</div>
+								<div class="our_branches_block_wrap">
+									<img src="images/foto/room_page/hotel.jpg" alt="">
+									<div class="our_branches_block_wrap_text">
+										<div class="our_branches_block_wrap_title">Hotel England London</div>
+										<div class="our_branches_block_wrap_subtitle">by John Doe on 02/03/2020</div>
+										<div class="our_branches_block_wrap_stars">
+											<img src="images/icons/icon-star.png">
+											<img src="images/icons/icon-star.png">
+											<img src="images/icons/icon-star.png">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="reviews" class="reviews">
+			<div class="container">
+				<div class="row">
+					<div class="reviews_block col-md-8">
+						<div class="reviews_block_title">Reviews</div>
+						<div class="reviews_block_comment">
+							<div class="reviews_block_comment_wrap">
+								<img src="images/foto/room_page/user.jpeg">
+								<div class="reviews_block_comment_wrap_name">Jess Doe</div>
+								<div class="reviews_block_comment_wrap_title">Awesome Hotel</div>
+								<div class="reviews_block_comment_wrap_square">7.5</div>
+							</div>
+							<div class="reviews_block_comment_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et ipsum sit amet ex pulvinar mattis. Pellentesque vitae purus viverra, aliquet lacus in, fringilla massa. Suspendisse ac est a nisi aliquet</div>
+							<button>full info <img src="images/arrows/down-arrow.png"></button>
+						</div>
+						<div class="reviews_block_comment">
+							<div class="reviews_block_comment_wrap">
+								<img src="images/foto/room_page/user.jpeg">
+								<div class="reviews_block_comment_wrap_name">Jess Doe</div>
+								<div class="reviews_block_comment_wrap_title">Awesome Hotel</div>
+								<div class="reviews_block_comment_wrap_square">7.5</div>
+							</div>
+							<div class="reviews_block_comment_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et ipsum sit amet ex pulvinar mattis. Pellentesque vitae purus viverra, aliquet lacus in, fringilla massa. Suspendisse ac est a nisi aliquet</div>
+							<button>full info <img src="images/arrows/down-arrow.png"></button>
+						</div>
+						<div class="row">
+							<button class="dark_btn col-md-4 offset-md-4">show more</button>
+						</div>
+					</div>
+					<div class="reviews_rating col-md-4">
+						<div class="reviews_rating_dark">
+							<div class="reviews_rating_dark_title">7.5</div>
+							<div class="reviews_rating_dark_subtitle">3 rating</div>
+						</div>
+						<div class="reviews_rating_light">
+							<div class="reviews_rating_light_wrap">
+								<div class="reviews_rating_light_wrap_text">Location</div>
+								<progress value="80" max="100"></progress>
+								<div class="reviews_rating_light_wrap_value">9.5</div>
+							</div>
+							<div class="reviews_rating_light_wrap">
+								<div class="reviews_rating_light_wrap_text">Rooms</div>
+								<progress value="65" max="100"></progress>
+								<div class="reviews_rating_light_wrap_value">6.0</div>
+							</div>
+							<div class="reviews_rating_light_wrap">
+								<div class="reviews_rating_light_wrap_text">Services</div>
+								<progress value="50" max="100"></progress>
+								<div class="reviews_rating_light_wrap_value">5.5</div>
+							</div>
+							<div class="reviews_rating_light_wrap">
+								<div class="reviews_rating_light_wrap_text">Clean</div>
+								<progress value="70" max="100"></progress>
+								<div class="reviews_rating_light_wrap_value">8.0</div>
+							</div>
+							<div class="reviews_rating_light_wrap">
+								<div class="reviews_rating_light_wrap_text">Value</div>
+								<progress value="35" max="100"></progress>
+								<div class="reviews_rating_light_wrap_value">4.5</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="similar_rooms">
+			<div class="container">
+				<div class="similar_rooms_title">Similar Rooms</div>
+				<div class="row">
+					<div class="similar_rooms_block col-md-4">
+						<div class="similar_rooms_block_img"> 
+							<div class="similar_rooms_block_img_info">
+								HOTEL LONDON
+								<img src="images/icons/star-white.png" alt="">
+								<img src="images/icons/star-white.png" alt="">
+								<img src="images/icons/star-white.png" alt="">
+								<img src="images/icons/video-player.png" alt="">
+								<img src="images/icons/landscape-photo.png" alt="">
+							</div>
+						</div>
+						<div class="similar_rooms_block_info">
+							<div class="similar_rooms_block_info_text">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Blandit vel sapien vitae.</div>
+							<button>book now</button>
+						</div>
+					</div>
+					<div class="similar_rooms_block col-md-4">
+						<div class="similar_rooms_block_img"> 
+							<div class="similar_rooms_block_img_info">
+								HOTEL LONDON
+								<img src="images/icons/star-white.png" alt="">
+								<img src="images/icons/star-white.png" alt="">
+								<img src="images/icons/star-white.png" alt="">
+								<img src="images/icons/video-player.png" alt="">
+								<img src="images/icons/landscape-photo.png" alt="">
+							</div>
+						</div>
+						<div class="similar_rooms_block_info">
+							<div class="similar_rooms_block_info_text">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Blandit vel sapien vitae.</div>
+							<button>book now</button>
+						</div>
+					</div>
+					<div class="similar_rooms_block col-md-4">
+						<div class="similar_rooms_block_img"> 
+							<div class="similar_rooms_block_img_info">
+								HOTEL LONDON
+								<img src="images/icons/star-white.png" alt="">
+								<img src="images/icons/star-white.png" alt="">
+								<img src="images/icons/star-white.png" alt="">
+								<img src="images/icons/video-player.png" alt="">
+								<img src="images/icons/landscape-photo.png" alt="">
+							</div>
+						</div>
+						<div class="similar_rooms_block_info">
+							<div class="similar_rooms_block_info_text">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Blandit vel sapien vitae.</div>
+							<button>book now</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="footer_title">Current Weather</div>
+								<div class="footer_subtitle">Bali, Indonesia</div>
+								<div class="footer_img"><img src="images/icons/sun.png">16<sup>o</sup>C</div>
+							</div>
+							<div class="col-md-4">
+								<div class="footer_title">Connect With Us</div>
+								<div class="footer_subtitle">social media channels</div>
+								<div class="footer_img">
+									<a href="http://instagram.com"><img src="images/icons/inst.png"></a>
+									<a href="http://facebook.com"><img src="images/icons/fb.png"></a>
+									<a href="http://twitter.com"><img src="images/icons/tw.png"></a>
+									<a href="http://pinterest.com"><img src="images/icons/pinterest.png"></a>
+									<a href="http://youtube.com"><img src="images/icons/youtube.png"></a>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="footer_title">Newsletters</div>
+								<div class="footer_subtitle">sign up for special offers</div>
+								<form>
+									<input type="email" name="email" placeholder="Email">
+									<button>search</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/code.js"></script>
+	</body>
+</html>

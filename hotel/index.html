@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width">
+		<link href="https://fonts.googleapis.com/css?family=Gilda+Display|Roboto:300,400,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/index_page/style.css">
+		<title>Logo Hotel - official site</title>
+	</head>
+	<body>
+		<a href="../index.html" class="portfolio" title="Вернуться к главной странице портфолио">Вернуться к портфолио</a>
+		<div class="top_header">
+			<div class="container">
+				<div class="row">
+					<div class="top_header_left col-xl-5 col-lg-6">
+						<div class="lang">
+							<span>EN</span>
+							<span>RU</span>
+							<span>DE</span>
+						</div>
+						<div class="pay_options">
+							<img src="images/icons/credit-card.png" alt="credit card icon">
+							<span>Payment Options</span>
+						</div>
+						<div class="terms">
+							<img src="images/icons/check-square.png" alt="check icon">
+							<span>Terms Conditions</span>
+						</div>
+					</div>
+					<div class="top_header_right col-xl-6 offset-xl-1 col-lg-6">
+						<a href="#" class="review">Add Your Review</a>
+						<a href="#" class="mail"><img src="images/icons/envelope.png" alt="mail icon"></a>
+						<a href="#" class="my_booking">My Bookings</a>
+						<button id="log_in_btn" class="log_in">
+							<img src="images/icons/default-avatar.png" alt="default avatar icon"> My Account
+						</button>
+						<div id="log_in_modal" class="log_in_modal">
+							<div class="log_in_modal_content">
+								<div class="log_in_modal_header">
+									<span id="log_in_cls" class="close">&times;</span>
+									<div class="modal_title">Welcome back!</div>
+								</div>
+								<div class="modal_body">
+									<form>
+										<input type="text" name="login" placeholder="Login or email:">
+										<input type="password" name="password" placeholder="Password:">
+										<button>log in</button>
+									</form>
+								</div>
+							</div>
+						</div>
+						<button id="sign_in_btn" class="sign_in">SIGN IN</button>
+						<div id="sign_in_modal" class="sign_in_modal">
+							<div class="sign_in_modal_content">
+								<div class="sign_in_modal_header">
+									<span id="sign_in_cls" class="close">&times;</span>
+									<div class="modal_title">Create Your Account</div>
+								</div>
+								<div class="modal_body">
+									<form>
+										<input type="text" name="name" placeholder="Name:">
+										<input type="text" name="surname" placeholder="Surname:">
+										<input type="text" name="login" placeholder="Login:">
+										<input type="email" name="email" placeholder="Email:">
+										<input type="password" name="password" placeholder="Password:">
+										<button>sing in</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav>
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-2 col-lg-3 col-4 logo">Logo hotel<div class="logo_inner">luxury hotel</div></div>
+					<div class="col-xl-7 offset-xl-3 col-lg-7 offset-lg-2">
+						<ul class="top_menu">
+							<li><a href="index.html">Home</a>
+								<ul class="inner_menu">
+									<li><a href="#about">About Us</a></li>
+									<li><a href="#best">Best Rooms</a></li>
+									<li><a href="#services">Our Services</a></li>
+								</ul>
+							</li>
+							<li><a href="search_page.html">Rooms</a></li>
+							<li><a href="room_page.html">Single Room</a></li>
+							<li><a href="#">Booking</a>
+								<ul class="inner_menu">
+									<li><a href="search_page.html">Search Room</a></li>
+									<li><a href="booking_page.html">Booking</a></li>
+									<li><a href="checkout_page.html">Checkout</a></li>
+									<li><a href="thank_page.html">Thanks You</a></li>
+								</ul>
+							</li>
+							<li><a href="#blog">Our News</a></li>
+							<li><a href="contact_page.html">Contact</a></li>
+						</ul>
+					</div>
+					<div id="mobile_icon" class="menu_icon_wrapper col-1 offset-11">
+						<div class="menu_icon"></div>
+					</div>
+					<div id="mobile_nav" class="mobile_nav">
+                        <div class="mobile_nav_list">
+							<a href="index.html" class="mobile_nav_link">Home</a>
+							<a href="search_page.html" class="mobile_nav_link">Rooms</a>
+							<a href="booking_page.html" class="mobile_nav_link">Booking</a>
+							<a href="index.html#blog" class="mobile_nav_link">Our News</a>
+							<a href="contact_page.html" class="mobile_nav_link">Contact</a>
+							<a href="#" class="mobile_nav_link">Payment Options</a>
+							<a href="#" class="mobile_nav_link">Terms Conditions</a>
+							<a href="#" class="mobile_nav_link">My Account</a>
+							<a href="#" class="mobile_nav_link">SIGN IN</a>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</nav>
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12">
+						<div class="suptitle">luxury hotel & best resort</div>
+						<hr>
+						<div class="title">enjoy a luxury <br>experience</div>
+						<button class="rooms">rooms suites</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="reserve col-xl-8 offset-xl-2 col-lg-8 offset-lg-2">
+						<div class="reserve_check">
+							<div class="reserve_check_date">
+								<div class="reserve_check_date_title">check-in</div>
+								<div class="reserve_check_date_info">
+									<span>26</span>
+									<div>
+										<span>Jun</span>
+										<button><img src="images/arrows/down-arrow.png"></button>
+									</div>
+								</div>
+							</div>
+							<div class="reserve_check_date">
+								<div class="reserve_check_date_title">check-out</div>
+								<div class="reserve_check_date_info">
+									<span>28</span>
+									<div>
+										<span>Jun</span>
+										<button><img src="images/arrows/down-arrow.png"></button>
+									</div>
+								</div>
+							</div>
+							<div class="reserve_check_date">
+								<div class="reserve_check_date_title">guests</div>
+								<div class="reserve_check_date_info">
+									<span id="people">1</span>
+									<div>
+										<button id="plusPeople" onclick="function(plus);"><img src="images/arrows/up-arrow.png"></button>
+										<button id="minusPeople" onclick="function(minus);"><img src="images/arrows/down-arrow.png"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="check">check<br> availability</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section id="about" class="about_us">
+			<div class="container">
+				<div class="row">
+					<div class="about_us_text  col-xl-4 offset-xl-1 col-lg-4 offset-lg-1">
+						<div class="about_us_text_suptitle">
+							hotel bayview
+							<img src="images/icons/icon-star.png" alt="">
+							<img src="images/icons/icon-star.png" alt="">
+							<img src="images/icons/icon-star.png" alt="">
+						</div>
+						<div class="about_us_text_title">
+							Pearl of the <br>Adriatic
+						</div>
+						<div class="about_us_text_infotext">
+							Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat dignissim. Sed quis rutrum tellus, sit amet viverra felis. Cras sagittis sem sit amet urna feugiat rutrum. Nam nulla ipsum, venenatis malesuada felis.
+						</div>
+						<button class="btn_about">about us</button>
+					</div>
+					<div class="about_us_foto col-xl-6 offset-xl-1 col-lg-6 offset-lg-1">
+						<img class="about_us_foto_1" src="images/foto/foto1.jpg">
+						<img class="about_us_foto_2" src="images/foto/foto2.jpg">
+						<img class="about_us_foto_3" src="images/foto/foto3.jpg">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="best" class="best_rooms">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12">
+						<div class="best_rooms_suptitle">luxury hotel</div>
+						<hr>
+						<div class="best_rooms_title">Best Rooms</div>
+						<div class="best_rooms_blocks">
+							<div class="best_rooms_blocks_room">
+								<div class="best_rooms_blocks_room_info">
+									HOTEL LONDON
+									<img src="images/icons/star-white.png" alt="">
+									<img src="images/icons/star-white.png" alt="">
+									<img src="images/icons/star-white.png" alt="">
+									<img src="images/icons/video-player.png" alt="">
+									<img src="images/icons/landscape-photo.png" alt="">
+									<div class="best_rooms_blocks_room_info_fullroom">
+										<div class="best_rooms_blocks_room_info_fullroom_title">Family Room</div>
+										<div class="best_rooms_blocks_room_info_fullroom_about">
+											<div class="best_rooms_blocks_room_info_fullroom_about_square">7.5</div>
+											<div class="best_rooms_blocks_room_info_fullroom_about_review">5 reviews</div>
+											<div class="best_rooms_blocks_room_info_fullroom_about_people">
+												<img src="images/icons/user.png">
+												<span>3 guests</span>
+											</div>
+											<div class="best_rooms_blocks_room_info_fullroom_about_room">
+												<img src="images/icons/plan.png">
+												<span>25 m<sup>2</sup></span>
+											</div>
+										</div>
+										<div class="best_rooms_blocks_room_info_fullroom_text">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Blandit vel sapien vitae.</div>
+										<button>book now from 30$</button>
+									</div>
+								</div>
+							</div>
+							<div class="best_rooms_blocks_room">
+								<div class="best_rooms_blocks_room_info">
+									HOTEL LONDON
+									<img src="images/icons/star-white.png" alt="">
+									<img src="images/icons/star-white.png" alt="">
+									<img src="images/icons/star-white.png" alt="">
+									<img src="images/icons/video-player.png" alt="">
+									<img src="images/icons/landscape-photo.png" alt="">
+									<div class="best_rooms_blocks_room_info_fullroom">
+										<div class="best_rooms_blocks_room_info_fullroom_title">Family Room</div>
+										<div class="best_rooms_blocks_room_info_fullroom_about">
+											<div class="best_rooms_blocks_room_info_fullroom_about_square">7.5</div>
+											<div class="best_rooms_blocks_room_info_fullroom_about_review">5 reviews</div>
+											<div class="best_rooms_blocks_room_info_fullroom_about_people">
+												<img src="images/icons/user.png">
+												<span>3 guests</span>
+											</div>
+											<div class="best_rooms_blocks_room_info_fullroom_about_room">
+												<img src="images/icons/plan.png">
+												<span>25 m<sup>2</sup></span>
+											</div>
+										</div>
+										<div class="best_rooms_blocks_room_info_fullroom_text">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Blandit vel sapien vitae.</div>
+										<button>book now from 30$</button>
+									</div>
+								</div>
+							</div>																		
+						</div>
+						<div class="best_rooms_blocks">
+							<div class="best_rooms_blocks_room">
+								<div class="best_rooms_blocks_room_info">
+									HOTEL LONDON
+									<img src="images/icons/star-white.png" alt="">
+									<img src="images/icons/star-white.png" alt="">
+									<img src="images/icons/star-white.png" alt="">
+									<img src="images/icons/video-player.png" alt="">
+									<img src="images/icons/landscape-photo.png" alt="">
+									<div class="best_rooms_blocks_room_info_fullroom">
+										<div class="best_rooms_blocks_room_info_fullroom_title">Family Room</div>
+										<div class="best_rooms_blocks_room_info_fullroom_about">
+											<div class="best_rooms_blocks_room_info_fullroom_about_square">7.5</div>
+											<div class="best_rooms_blocks_room_info_fullroom_about_review">5 reviews</div>
+											<div class="best_rooms_blocks_room_info_fullroom_about_people">
+												<img src="images/icons/user.png">
+												<span>3 guests</span>
+											</div>
+											<div class="best_rooms_blocks_room_info_fullroom_about_room">
+												<img src="images/icons/plan.png">
+												<span>25 m<sup>2</sup></span>
+											</div>
+										</div>
+										<div class="best_rooms_blocks_room_info_fullroom_text">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Blandit vel sapien vitae.</div>
+										<button>book now from 30$</button>
+									</div>
+								</div>
+							</div>
+							<div class="best_rooms_blocks_room">
+								<div class="best_rooms_blocks_room_info">
+									HOTEL LONDON
+									<img src="images/icons/star-white.png" alt="">
+									<img src="images/icons/star-white.png" alt="">
+									<img src="images/icons/star-white.png" alt="">
+									<img src="images/icons/video-player.png" alt="">
+									<img src="images/icons/landscape-photo.png" alt="">
+									<div class="best_rooms_blocks_room_info_fullroom">
+										<div class="best_rooms_blocks_room_info_fullroom_title">Family Room</div>
+										<div class="best_rooms_blocks_room_info_fullroom_about">
+											<div class="best_rooms_blocks_room_info_fullroom_about_square">7.5</div>
+											<div class="best_rooms_blocks_room_info_fullroom_about_review">5 reviews</div>
+											<div class="best_rooms_blocks_room_info_fullroom_about_people">
+												<img src="images/icons/user.png">
+												<span>3 guests</span>
+											</div>
+											<div class="best_rooms_blocks_room_info_fullroom_about_room">
+												<img src="images/icons/plan.png">
+												<span>25 m<sup>2</sup></span>
+											</div>
+										</div>
+										<div class="best_rooms_blocks_room_info_fullroom_text">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Blandit vel sapien vitae.</div>
+										<button>book now from 30$</button>
+									</div>
+								</div>
+							</div>																		
+						</div>
+					</div> 
+				</div>
+			</div>
+		</section>
+		<section id="services" class="big_block">
+			<div class="big_block_images">
+				<img src="images/foto/big-block-foto1.jpg">
+				<img src="images/foto/big-block-foto2.jpg">
+				<img src="images/foto/big-block-foto4.jpg">
+				<img src="images/foto/big-block-foto3.jpg">
+			</div>
+			
+			<div class="big_block_info">
+				<div class="big_block_info_subtitle">luxury hotel & best resort </div>
+				<div class="big_block_info_title">Pearl of the <br><span>Adriatic</span></div>
+				<div class="big_block_info_text">
+					<div>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Blandit vel sapien vitae, condimentum ultricies magna et orci ut et lobortis, Phasellus enim</div>
+					<div>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Blandit vel sapien vitae, condimentum ultricies magna et orci ut et lobortis, Phasellus enim</div>
+				</div>
+				<button>check all packeages</button>
+			</div>
+		</section>
+		<section class="our_services">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12">
+						<div class="our_services_title col-xl-8 offset-xl-2">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Best services orci ut et lobortis. Blandit vel sapien vitae, condimentum</div>
+						<div class="our_services_wrapper">
+							<div class="row">
+								<div class="our_services_wrapper_slider col-xl-6 col-lg-6">
+									<input class="our_services_wrapper_slider_nav" type="radio" name="slider" title="slide1" checked="checked">
+									<input class="our_services_wrapper_slider_nav" type="radio" name="slider" title="slide2">
+									<input class="our_services_wrapper_slider_nav" type="radio" name="slider" title="slide3">
+									<div class="our_services_wrapper_slider_inner">
+									    <div class="our_services_wrapper_slider_inner_contents">
+											<div class="our_services_wrapper_slider_inner_contents_suptitle">wellness</div>
+											<hr>
+											<div class="our_services_wrapper_slider_inner_contents_title">Spa and Beauty</div>
+											<div class="our_services_wrapper_slider_inner_contents_text">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Phasellus enim libero, blandit.</div>
+											<button>read more</button>
+									    </div>
+									    <div class="our_services_wrapper_slider_inner_contents">
+											<div class="our_services_wrapper_slider_inner_contents_suptitle">wellness</div>
+											<hr>
+											<div class="our_services_wrapper_slider_inner_contents_title">Spa and Beauty</div>
+											<div class="our_services_wrapper_slider_inner_contents_text">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Phasellus enim libero, blandit.</div>
+											<button>read more</button>
+									    </div>
+									    <div class="our_services_wrapper_slider_inner_contents">
+											<div class="our_services_wrapper_slider_inner_contents_suptitle">wellness</div>
+											<hr>
+											<div class="our_services_wrapper_slider_inner_contents_title">Spa and Beauty</div>
+											<div class="our_services_wrapper_slider_inner_contents_text">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Phasellus enim libero, blandit.</div>
+											<button>read more</button>
+									    </div>
+									</div>
+								</div>
+								<img class="px-0 col-xl-6 col-lg-6" src="images/foto/spa.jpg" alt="">
+							</div>
+							<div class="row">
+								<img class="px-0 col-xl-6 col-lg-6" src="images/foto/wedding.jpg" alt="">
+								<div class="our_services_wrap_slide col-xl-6 col-lg-6">
+									<input class="our_services_wrap_slide_nav" type="radio" name="slide" title="sld1" checked="checked">
+									<input class="our_services_wrap_slide_nav" type="radio" name="slide" title="sld2">
+									<input class="our_services_wrap_slide_nav" type="radio" name="slide" title="sld3">
+									<div class="our_services_wrap_slide_inner">
+									    <div class="our_services_wrap_slide_inner_cont">
+											<div class="our_services_wrap_slide_inner_cont_suptitle">wedding</div>
+											<hr>
+											<div class="our_services_wrap_slide_inner_cont_title">Luxury Vacation</div>
+											<div class="our_services_wrap_slid_inner_cont_text">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Phasellus enim libero, blandit.</div>
+											<button>read more</button>
+									    </div>
+									    <div class="our_services_wrap_slide_inner_cont">
+											<div class="our_services_wrap_slide_inner_cont_suptitle">wellness</div>
+											<hr>
+											<div class="our_services_wrap_slide_inner_cont_title">Spa and Beauty</div>
+											<div class="our_services_wrap_slide_inner_cont_text">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Phasellus enim libero, blandit.</div>
+											<button>read more</button>
+									    </div>
+									    <div class="our_services_wrap_slide_inner_cont">
+											<div class="our_services_wrap_slide_inner_cont_suptitle">wellness</div>
+											<hr>
+											<div class="our_services_wrap_slide_inner_cont_title">Spa and Beauty</div>
+											<div class="our_services_wrap_slide_inner_cont_text">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis. Phasellus enim libero, blandit.</div>
+											<button>read more</button>
+									    </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="video">
+			<iframe  src="https://www.youtube.com/embed/zHcr32gRRCs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</section>
+		<section id="blog" class="blog">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12">
+						<div class="blog_suptitle">hotel news</div>
+						<hr>
+						<div class="blog_title">Our Blog</div>
+						<div class="blog_wrapper">
+							<div class="row">
+								<div class="blog_wrapper_blocks col-xl-4 col-lg-4">
+									<img src="images/foto/fish.jpg">
+									<div class="blog_wrapper_blocks_info">
+										<div class="blog_wrapper_blocks_info_suptitle">luxury hotel</div>
+										<p></p>
+										<div class="blog_wrapper_blocks_info_title">Fish Dinner</div>
+										<div class="blog_wrapper_blocks_info_text">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</div>
+										<button>read more</button>
+									</div>
+									<div class="blog_wrapper_blocks_btn"><img src="images/icons/link.png"><a href="">Check New Events</a></div>
+								</div>
+								<div class="blog_wrapper_blocks col-xl-4 col-lg-4">
+									<div class="blog_wrapper_blocks_follow">
+										<div>Follow Adriatic Luxury Hotel</div>
+										<hr>
+										<div><sup>,,</sup>John Doe</div>
+									</div>
+									<img src="images/foto/place.jpg">
+									<div class="blog_wrapper_blocks_info">
+										<div class="blog_wrapper_blocks_info_suptitle">luxury hotel</div>
+										<p></p>
+										<div class="blog_wrapper_blocks_info_title">Around Us</div>
+										<div class="blog_wrapper_blocks_info_text">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis.</div>
+										<button>read more</button>
+									</div>
+								</div>
+								<div class="blog_wrapper_news col-xl-4 col-lg-4">
+									<div class="img_wrap">
+										<img class="img_wrap_foto1" src="images/foto/news1.jpg">
+										<div class="img_wrap_info">
+											<div class="img_wrap_info_suptitle">news</div>
+											<p></p>
+											<div class="img_wrap_info_title">Around Us</div>
+											<a href="">read more<img src="images/arrows/right-arrow.png"></a>
+										</div>
+									</div>
+									<div class="img_wrap">
+										<img class="img_wrap_foto2" src="images/foto/news2.jpg">
+										<div class="img_wrap_info2">
+											<div class="img_wrap_info2_suptitle">news</div>
+											<p></p>
+											<div class="img_wrap_info2_title">Relax Zone</div>
+											<a href="">read more<img src="images/arrows/right-arrow.png"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="footer_title">Current Weather</div>
+								<div class="footer_subtitle">Bali, Indonesia</div>
+								<div class="footer_img"><img src="images/icons/sun.png">16<sup>o</sup>C</div>
+							</div>
+							<div class="col-md-4">
+								<div class="footer_title">Connect With Us</div>
+								<div class="footer_subtitle">social media channels</div>
+								<div class="footer_img">
+									<a href="http://instagram.com"><img src="images/icons/inst.png"></a>
+									<a href="http://facebook.com"><img src="images/icons/fb.png"></a>
+									<a href="http://twitter.com"><img src="images/icons/tw.png"></a>
+									<a href="http://pinterest.com"><img src="images/icons/pinterest.png"></a>
+									<a href="http://youtube.com"><img src="images/icons/youtube.png"></a>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="footer_title">Newsletters</div>
+								<div class="footer_subtitle">sign up for special offers</div>
+								<form>
+									<input type="email" name="email" placeholder="Email">
+									<button>search</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/code.js"></script>
+	</body>
+</html>

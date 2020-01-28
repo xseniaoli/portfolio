@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width">
+		<link href="https://fonts.googleapis.com/css?family=Gilda+Display|Roboto:300,400,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/contact_page/style.css">
+		<title>Contact</title>
+	</head>
+	<body>
+		<a href="../index.html" class="portfolio" title="Вернуться к главной странице портфолио">Вернуться к портфолио</a>
+		<div class="top_header">
+			<div class="container">
+				<div class="row">
+					<div class="top_header_left col-xl-5 col-lg-6">
+						<div class="lang">
+							<span>EN</span>
+							<span>RU</span>
+							<span>DE</span>
+						</div>
+						<div class="pay_options">
+							<img src="images/icons/credit-card.png" alt="credit card icon">
+							<span>Payment Options</span>
+						</div>
+						<div class="terms">
+							<img src="images/icons/check-square.png" alt="check icon">
+							<span>Terms Conditions</span>
+						</div>
+					</div>
+					<div class="top_header_right col-xl-6 offset-xl-1 col-lg-6">
+						<a href="#" class="review">Add Your Review</a>
+						<a href="#" class="mail"><img src="images/icons/envelope.png" alt="mail icon"></a>
+						<a href="#" class="my_booking">My Bookings</a>
+						<button id="log_in_btn" class="log_in">
+							<img src="images/icons/default-avatar.png" alt="default avatar icon"> My Account
+						</button>
+						<div id="log_in_modal" class="log_in_modal">
+							<div class="log_in_modal_content">
+								<div class="log_in_modal_header">
+									<span id="log_in_cls" class="close">&times;</span>
+									<div class="modal_title">Welcome back!</div>
+								</div>
+								<div class="modal_body">
+									<form>
+										<input type="text" name="login" placeholder="Login or email:">
+										<input type="password" name="password" placeholder="Password:">
+										<button>log in</button>
+									</form>
+								</div>
+							</div>
+						</div>
+						<button id="sign_in_btn" class="sign_in">SIGN IN</button>
+						<div id="sign_in_modal" class="sign_in_modal">
+							<div class="sign_in_modal_content">
+								<div class="sign_in_modal_header">
+									<span id="sign_in_cls" class="close">&times;</span>
+									<div class="modal_title">Create Your Account</div>
+								</div>
+								<div class="modal_body">
+									<form>
+										<input type="text" name="name" placeholder="Name:">
+										<input type="text" name="surname" placeholder="Surname:">
+										<input type="text" name="login" placeholder="Login:">
+										<input type="email" name="email" placeholder="Email:">
+										<input type="password" name="password" placeholder="Password:">
+										<button>sing in</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav>
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-2 col-lg-3 col-4 logo">Logo hotel<div class="logo_inner">luxury hotel</div></div>
+					<div class="col-xl-7 offset-xl-3 col-lg-7 offset-lg-2">
+						<ul class="top_menu">
+							<li><a href="index.html">Home</a>
+								<ul class="inner_menu">
+									<li><a href="index.html#about">About Us</a></li>
+									<li><a href="index.html#best">Best Rooms</a></li>
+									<li><a href="index.html#services">Our Services</a></li>
+								</ul>
+							</li>
+							<li><a href="search_page.html">Rooms</a></li>
+							<li><a href="room_page.html">Single Room</a></li>
+							<li><a href="#">Booking</a>
+								<ul class="inner_menu">
+									<li><a href="search_page.html">Search Room</a></li>
+									<li><a href="booking_page.html">Booking</a></li>
+									<li><a href="checkout_page.html">Checkout</a></li>
+									<li><a href="thank_page.html">Thanks You</a></li>
+								</ul>
+							</li>
+							<li><a href="index.html#blog">Our News</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+					<div id="mobile_icon" class="menu_icon_wrapper col-1 offset-11">
+						<div class="menu_icon"></div>
+					</div>
+					<div id="mobile_nav" class="mobile_nav">
+                        <div class="mobile_nav_list">
+							<a href="index.html" class="mobile_nav_link">Home</a>
+							<a href="search_page.html" class="mobile_nav_link">Rooms</a>
+							<a href="booking_page.html" class="mobile_nav_link">Booking</a>
+							<a href="index.html#blog" class="mobile_nav_link">Our News</a>
+							<a href="contact_page.html" class="mobile_nav_link">Contact</a>
+							<a href="#" class="mobile_nav_link">Payment Options</a>
+							<a href="#" class="mobile_nav_link">Terms Conditions</a>
+							<a href="#" class="mobile_nav_link">My Account</a>
+							<a href="#" class="mobile_nav_link">SIGN IN</a>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</nav>
+		<header>
+			<span>Contact</span>
+		</header>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="title">Drop us a line</div>
+						<div class="text">
+							Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat dignissim. Sed quis rutrum tellus, sit amet viverra felis. Cras sagittis sem sit amet urna feugiat rutrum. Nam nulla ipsum, venenatis malesuada felis quis, ultricies convallis neque. Pellentesque tristique fringilla tempus. Vivamus bibendum nibh in dolor pharetra, a euismod nulla dignissim.
+						</div>
+						<form class="information col-md-12">
+							<div class="row">
+								<div class="col-md-6"><p>Name:<br><input type="text"></p></div>
+								<div class="col-md-6"><p>Surname:<br><input type="text"></p></div>
+							</div>
+							<div class="row">
+								<div class="col-md-6"><p>Email:<br><input type="email"></p></div>
+								<div class="col-md-6"><p>Phone:<br><input type="tel"></p></div>
+							</div>
+							<div class="row">
+								<div class="col-md-12"><p>Message:<br><textarea></textarea></p></div>
+							</div>
+							<div class="row">
+								<div class="col-md-12"><button>send now</button></div>
+							</div>
+						</form>
+					</div>
+					<div class="col-md-6">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1972.9586222126713!2d115.5615280946208!3d-8.507416197671336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd20f26a6e9680d%3A0x50b97aa7143821f3!2sBayshore%20Villas!5e0!3m2!1sru!2sru!4v1579953693461!5m2!1sru!2sru" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+						<div class="contact">
+							<div class="contact_info col-lg-6 col-12">
+								<div>Adress: <span>Jl. Raya Candidasa No. 4</span></div>
+								<div>City: <span>Karangasem</span></div>
+								<div>Phone: <span>+62 000 0000</span></div>
+							</div>
+							<div class="contact_info col-lg-6 col-12">
+								<div>Email: <span>info@logohotel.com</span></div>
+								<div>Check in: <span>2:00pm</span></div>
+								<div>Check out: <span>12:00pm</span></div>
+							</div>
+						</div>
+						<div class="available">
+							<div class="title">available at 10am to 8pm</div>
+							<hr>
+							<div class="phone">+62 030 0405</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="footer_title">Current Weather</div>
+								<div class="footer_subtitle">Bali, Indonesia</div>
+								<div class="footer_img"><img src="images/icons/sun.png">16<sup>o</sup>C</div>
+							</div>
+							<div class="col-md-4">
+								<div class="footer_title">Connect With Us</div>
+								<div class="footer_subtitle">social media channels</div>
+								<div class="footer_img">
+									<a href="http://instagram.com"><img src="images/icons/inst.png"></a>
+									<a href="http://facebook.com"><img src="images/icons/fb.png"></a>
+									<a href="http://twitter.com"><img src="images/icons/tw.png"></a>
+									<a href="http://pinterest.com"><img src="images/icons/pinterest.png"></a>
+									<a href="http://youtube.com"><img src="images/icons/youtube.png"></a>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="footer_title">Newsletters</div>
+								<div class="footer_subtitle">sign up for special offers</div>
+								<form>
+									<input type="email" name="email" placeholder="Email">
+									<button>search</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/code.js"></script>
+	</body>
+</html>md-
